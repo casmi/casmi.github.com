@@ -68,7 +68,8 @@ body {
 .bLine{
 	width: 920px;
 	height: 6px;
-	background-color: #0072BA;
+	background-image: url("../img/bLine.jpg");
+	background-repeat: no-repeat;
 }
 
 .bLineSide{
