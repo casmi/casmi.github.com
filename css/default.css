@@ -86,6 +86,7 @@ body {
 /*main*/
 #main{
 	padding-top: 30px;
+	min-height: 700px;
 }
 
 /*side*/
