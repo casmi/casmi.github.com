@@ -56,7 +56,7 @@ body {
 }
 
 #header ul{
-	padding: 40px 0 0 400px;
+	padding: 43px 0 0 400px;
 	float: left;
 }
 
@@ -66,16 +66,17 @@ body {
 }
 
 #header ul li	a{
+	padding-top: 5px;
 	font-size: 18px;
 }
 
 #header ul li	a.selected{
-	border-top: 6px solid #0072BA;
+	border-top: 3px solid #0072BA;
 }
 
 #header ul li	a:hover{
 	color: #ffffff;
-	border-top: 6px solid #0072BA;
+	border-top: 3px solid #0072BA;
 }
 
 .bLine{
