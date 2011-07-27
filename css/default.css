@@ -69,6 +69,15 @@ body {
 	font-size: 18px;
 }
 
+#header ul li	a.selected{
+	border-top: 6px solid #0072BA;
+}
+
+#header ul li	a:hover{
+	color: #ffffff;
+	border-top: 6px solid #0072BA;
+}
+
 .bLine{
 	width: 920px;
 	height: 6px;
