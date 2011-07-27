@@ -6,12 +6,16 @@
 	font-family: 'Lucida Grande', 'Trebuchet MS', 'Bitstream Vera Sans', Verdana, Helvetica, sans-serif;
 	font-size: 12px;
 	letter-spacing: 0;
-	list-style: none;
 	color: #ffffff;
+}
+
+ol{
+	padding: 0;
 }
 
 ul{
 	padding: 0;
+	list-style: none;
 }
 
 a img{
@@ -74,7 +78,7 @@ body {
 
 .bLineSide{
 	margin: 15px 0;
-	width: 135px;
+	width: 155px;
 	height: 3px;
 	background-color: #0072BA;
 }
@@ -88,10 +92,7 @@ body {
 .side{
 	float: left;
 	width: 165px;
-}
-
-.sideContents{
-	padding-left: 15px;
+	padding: 0 15px 0 0;
 }
 
 .side span{
@@ -101,12 +102,23 @@ body {
 }
 
 .side p{
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.side p a{
+	font-size: 14px;
 	font-weight: bold;
 }
 
 .side ul{
 	padding: 10px 0 0 8px;
 }
+
+.side ul li{
+	padding-bottom: 0.5em;
+}
+
 
 .topSpace{
 	margin-top: 55px;
@@ -119,17 +131,68 @@ body {
 }
 
 .center h1{
-	font-size: 18px;
+	font-size: 24px;
 	font-weight: normal;
-	padding-bottom: 30px;
+	padding-bottom: 23px;
 }
 
-.center h1 img{
-	padding-left: 6px;
+.center h2{
+	font-size: 20px;
+	font-weight: normal;
+	padding-bottom: 15px;
+}
+
+.center h3{
+	font-size: 16px;
+	font-weight: normal;
+	padding-bottom: 15px;
+	padding-left: 20px;
 }
 
 .center p{
-	padding-bottom: 15px;
+	padding-bottom: 30px;
+	color: #a9a7a7;
+}
+
+.center p.cap{
+	padding-left: 20px;
+}
+
+.center ol{
+	padding-left: 3.5em;
+	padding-bottom: 30px;
+}
+
+.center ol li{
+	line-height: 1.5em;
+	font-size: 14px;
+}
+
+.center ul{
+	padding-bottom: 30px;
+}
+
+.center ul li{
+	font-size: 14px;
+}
+
+.center dl{
+	padding-left: 20px;
+}
+
+.center dl dt{
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.center dl dd{
+	padding: 0.5em 0 2.5em 0;
+	color: #a9a7a7;
+}
+
+.center dl dd a{
+	color: #a9a7a7;
+	text-decoration: underline;
 }
 
 /*footer*/
