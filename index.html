@@ -15,7 +15,7 @@
     		
     		<div id="header">
     			<a href="/">
-			       <img src="img/logo.png" />
+			       <img src="img/logo.png" alt="casmi logo" />
 				</a>
 		       <ul>
 		       		<li><a  class="selected" href="/">About</a></li>
@@ -53,9 +53,8 @@
     				
 	    			<p><a href="#get">Getting Started</a></p>
    					<ul>
-   		 				<li><a href="#a">Download jar file or source file</a></li>
-    					<li><a href="#b">open sample program files</a></li>
-    					<li><a href="#c">compile and execute it</a></li>
+   		 				<li><a href="#a">Download and install JOGL JNI library</a></li>
+    					<li><a href="#b">Setup casmi</a></li>
     				</ul>
     				
     				<div class="bLineSide"></div>
@@ -119,11 +118,72 @@
 					
 					<h2 id="get">Getting Started</h2>
 					<ol>
-						<li id="a">Download jar file or source file</li>
-						<li id="b">open sample program files</li>
-						<li id="c">compile and execute it</li>
+						<li>Download jar file or source file</li>
+						<li>Setup casmi</li>
 					</ol>
-					
+                    
+                    <h3 id="a">Download and Install  JOGL JNI library</h3>
+                    <dl>
+                        <dd>
+					        You can download JOGL JNI library from <a href="http://casmi.github.com/download/">http://casmi.github.com/download/</a>
+                            and copy extracted files from this to directory under <strong>java.library.path</strong>. Typical directories under <strong>java.library.path</strong> are followings.
+                        </dd>
+                        <dt>GNU/Linux</dt>
+                        <dd>
+                            <ul class="libpath">
+                                <li>/usr/local/lib</li>
+                                <li>/usr/lib</li>
+                                <li>/lib</li>
+                            </ul>
+                        </dd>
+                        <dt>Mac OS X</dt>
+                        <dd>
+                            <ul class="libpath">
+                                <li>/Library/Java/Extensions</li>
+                                <li>/System/Library/Java/Extensions</li>
+                                <li>/usr/lib/java</li>
+                            </ul>
+                        </dd>
+                        <dt>Windows</dt>
+                        <dd>
+                            <ul class="libpath">
+                                <li>C:\Windows\system32</li>
+                                <li>C:\Windows</li>
+                            </ul>
+                        </dd>
+                    </dl>
+
+                    <h3 id="b">Setup casmi</h3>
+                    <dl>
+                        <dt>Using maven (we recommend to use maven)</dt>
+                        <dd>
+                            Add following settings to your pom.xml
+                        </dd>
+                        <dd>
+<pre><code>&lt;repository&gt;
+    &lt;id&gt;casmi&lt;/id&gt;
+    &lt;name&gt;casmi&lt;/name&gt;
+    &lt;url&gt;http://casmi.github.com/maven-repo/&lt;/url&gt;
+&lt;/repository&gt;
+</code></pre>
+                        </dd>
+                        <dd>
+<pre><code>&lt;dependency&gt;
+    &lt;groupId&gt;casmi&lt;/groupId&gt;
+    &lt;artifactId&gt;casmi&lt;/artifactId&gt;
+    &lt;version&gt;0.0.1-SNAPSHOT&lt;/version&gt;
+&lt;/dependency&gt;
+</code></pre>
+                        </dd>
+                        <dd>
+                            Also you can download Quickstart Eclipse project template from <a href="http://casmi.github.com/download/">http://casmi.github.com/download/</a>
+                        </dd>
+                        <dt>Others</dt>
+                        <dd>
+                            You can download binary jar from http://casmi.github.com/download/
+                        </dd>
+                    </dl>
+
 					<h2 id="faq">FAQ</h2>
 					<dl>
 						<dt>What is casmi?</dt>
