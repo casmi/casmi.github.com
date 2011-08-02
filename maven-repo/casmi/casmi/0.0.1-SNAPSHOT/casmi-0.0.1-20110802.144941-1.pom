@@ -10,6 +10,10 @@
 	<name>casmi</name>
 	<url>http://casmi.github.com</url>
 	
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+	
 	<repositories>
 		<repository>
 			<id>casmi</id>
