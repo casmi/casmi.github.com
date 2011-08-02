@@ -46,6 +46,11 @@
 	text-decoration: underline;
 }
 
+.center p a{
+	color: #a9a7a7;
+	text-decoration: underline;
+}
+
 .center dl dd pre{
 	padding: 10px;
 	-webkit-box-shadow: rgba(0, 0, 0, 0.0664062) 0px 1px 2px inset;
@@ -63,4 +68,18 @@
 
 .center dl dd pre code{
 	color: #141010;
+}
+
+ul.libpath {
+    padding-bottom: 0px;
+}
+
+ul.libpath li{
+    font-size: 11px;
+    padding: 2px;
+	color: #a9a7a7;
+}
+
+dl dt.platform {
+    font-size: 11px;
 }
