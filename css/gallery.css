@@ -25,7 +25,6 @@
 
 .contents img{
 	width: 920px;
-	height: 460px
 }
 
 .contentsText{
@@ -41,6 +40,26 @@
 .contentsText h2{
 	font-size: 14px;
 	padding-bottom: 10px;
+}
+
+.contentsText p{
+	color: #a9a7a7;
+}
+
+.paddingT20{
+	padding-top:20px;
+}
+
+.contentsText ol{
+	padding-left: 1.5em;
+}
+
+.contentsText ul{
+	padding-top: 10px;
+}
+
+.contentsText li{
+	color: #a9a7a7;
 }
 
 .contentsText pre{
