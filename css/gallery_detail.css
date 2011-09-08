@@ -33,6 +33,10 @@
 	float: left;
 }
 
+.contentsText ul{
+	list-style: disc;
+}
+
 .marginL10{
 	margin-left: 20px;
 }
@@ -43,6 +47,7 @@
 }
 
 .contentsText p{
+	padding-bottom: 10px;
 	color: #a9a7a7;
 }
 
@@ -56,6 +61,7 @@
 
 .contentsText ul{
 	padding-top: 10px;
+	padding-left: 1.5em;
 }
 
 .contentsText li{
