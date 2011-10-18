@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+       <link href="../../css/default.css" rel="stylesheet" type="text/css" />
+       <link href="../../css/gallery_detail.css" rel="stylesheet" type="text/css" />
+        <title>casmi - gallery - nuclearPlantsMap</title>
+
+    </head>
+
+    <body>
+    	<div id="wrapper">
+    		
+    		<div id="header">
+    			<a href="../../">
+			       <img src="../../img/logo.png" />
+		       <ul>
+		       		<li><a href="../../">About</a></li>
+		       		<li><a href="../../download/">Download</a></li>
+		       		<li><a href="https://github.com/casmi/casmi/wiki">Wiki</a></li>
+		       		<li><a class="selected" href="../">Gallery</a></li>
+		       </ul>
+		       <div class="bLine clear"></div>
+    		</div>
+    	
+    		<div id="main">
+    			
+    			<div class="center">
+    				<h1>nuclearPlantsMap</h1>
+    				
+    				<div class="contents">
+    					<img src="../../img/gallery/npm.jpg"/>
+    					
+    					<div class="contentsText">
+    						<h2>Abstract</h2>
+    						<p>
+    							"Nuclear Plants Map" is a viewer for nuclear power plants on the earth. The data was downloaded from Wikipedia. It visualize nuclear power plants position and size with color and size of cones. It is easy to understand the density of nuclear power plants on the earth. When you click a cone, you can see the name of nulear power plants. Currently, it visualize 153 plants.
+    						</p>
+    						<p>
+	    						<a href="https://github.com/casmi/nuclear-plant-map">
+    								https://github.com/casmi/nuclear-plant-map
+    							</a>
+    						</p>
+    						<h2 class="paddingT20">Git Repository</h2>
+    							<p>
+    								git://github.com/casmi/nuclear-plant-map
+    							</p>
+    					</div>
+    					
+    					<div class="contentsText marginL10">
+    						<h2>Inside of Program</h2>
+    						<ol>
+    							<li>It read the list of nuclear power plants with geolocation information from the resources (NuclearPlantsMap.java).</li>
+    							<li>The csv data is read as objects (PowerPlantLoader.java).</li>
+    							<li>After that, the data is set to the appropriate position according to the geolocation. A nuclear power plant is visualized as a cone. The cone size indicates size of nuclear power plant. (CytobandView.java).</li>
+    							<li>To manipulate the earth, it uses mouse drag (TrackBall.java).</li>
+    							<li>It also uses selection buffers to enable to picking cone (NuclearPlantsMap.java).</li>
+    						</ol>
+    						<ul>
+	    						<li>For parsing the data, it uses casmi.parser.CSV</li>
+    							<li>For drawing the earth, it uses casmi.element.Rect, casmi.element.Sphere.</li>
+    							<li>For drawing nuclear power plants, it uses casmi.graphics.element.Cone.</li>
+    							<li>For putting textures, it uses casmi.graphics.element.Texture</li>
+    							<li>For drawing text, it uses casmi.element.Text, casmi.graphics.element.Text.TextAlign and casmi.font.Font</li>
+    						</ul>
+    					</div>
+    					
+    				</div>
+					
+    			</div>
+    		
+    		</div>
+    		
+    		<div id="footer" class="clear">
+    			<div class="bLine"></div>
+    			<div class="copyright">
+	    			<p>casmi was initiated by Xcoo, Inc.</p>
+    				<span>Copyright &copy; 2011 Xcoo, Inc. All rights reserved.</span>
+    			</div>
+    		</div>
+    		
+    	
+    	</div>
+    </body>
+</html>
