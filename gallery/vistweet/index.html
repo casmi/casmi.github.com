@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+       <link href="../../css/default.css" rel="stylesheet" type="text/css" />
+       <link href="../../css/gallery_detail.css" rel="stylesheet" type="text/css" />
+        <title>casmi - gallery - vistweet</title>
+
+    </head>
+
+    <body>
+    	<div id="wrapper">
+    		
+    		<div id="header">
+    			<a href="../../">
+			       <img src="../../img/logo.png" />
+		       <ul>
+		       		<li><a href="../../">About</a></li>
+		       		<li><a href="../../download/">Download</a></li>
+		       		<li><a href="https://github.com/casmi/casmi/wiki">Wiki</a></li>
+		       		<li><a class="selected" href="../">Gallery</a></li>
+		       </ul>
+		       <div class="bLine clear"></div>
+    		</div>
+    	
+    		<div id="main">
+    			
+    			<div class="center">
+    				<h1>vistweet</h1>
+    				
+    				<div class="contents">
+    					<img src="../../img/sample.png" height="655"/>
+    					
+    					<div class="contentsText">
+    						<h2>Abstract</h2>
+    						<p>
+    							&quot;vistweet&quot; is a application to visualize relations among tweets on Twitter.<br />
+								First, you have to authorize Vital Atlas on Twitter and input PIN code.<br />
+								It reads and analyzes recent tweets when you click a reload button at upper right (or every 5 minutes). <br />
+								When you click a timeline at left, a cluster that consists of your tweet and relational tweets (reply/RT) will be shown.<br />
+								A red line and icon shows "reply," a green shows "official retweet (RT)," and a blue shows "unofficial retweet (QT: quote tweet)."<br />
+								You can change the scale by using plus/minus buttons at upper right.
+    						</p>
+    						<p>
+	    						<a href="https://github.com/casmi/vistweet">
+    								https://github.com/casmi/vistweet
+    							</a>
+    						</p>
+    						<h2 class="paddingT20">Git Repository</h2>
+    							<p>
+    								git://github.com/casmi/vistweet.git
+    							</p>
+    					</div>
+    					
+    					<div class="contentsText marginL10">
+    						<h2>Inside of Program</h2>
+    						<ol>
+    							<li>It reads a timeline of Twitter using Twitter API every 5 minutes (Request.java, Twitter.java).</li>
+    							<li>It parse downloaded JSON data and stores to JSON objects (JsonStatus.java, JsonUser.java).</li>
+    							<li>Then, it maps them on O/R mapping, and insert to a SQLite database (UserTimeline/Mention/Retweet.java).</li>
+    							<li>After that, it analyzes relations of tweets (reply, RT, QT), and generates a cluster (RootCluster/Cluster.java).</li>
+    							<li>It draws a timeline that represents a source tweet and user icons of relative tweets at left in the window.</li>
+    							<li>When you click a tweet in the timeline, it visualizes relations of tweets at right space in the window.</li>
+    						</ol>
+    						
+    						<ul>
+    							<li>For Twitter authentication, it uses casmi.extension.net.OAuth</li>
+    							<li>For reading tweets via Twitter API, it uses casmi.net.HTTP</li>
+    							<li>For parsing downloaded data, it uses casmi.parser.JSON</li>
+    							<li>For using a SQLite database, it uses casmi.sql.SQLite/Entity</li>
+    							<li>For regular requests, it uses casmi.util.Cron</li>
+    							<li>For drawing a timeline, it uses casmi.graphics.element.Rect/TextBox/Texture</li>
+    							<li>For drawing a relation of tweets, it uses casmi.element.Line/Text/Texture</li>
+    							<li>For grouping each components, it uses casmi.graphics.group.Group</li>
+    						</ul>
+    					</div>
+    					
+    				</div>
+					
+    			</div>
+    		
+    		</div>
+    		
+    		<div id="footer" class="clear">
+    			<div class="bLine"></div>
+    			<div class="copyright">
+	    			<p>casmi was initiated by Xcoo, Inc.</p>
+    				<span>Copyright &copy; 2011 Xcoo, Inc. All rights reserved.</span>
+    			</div>
+    		</div>
+    		
+    	
+    	</div>
+    </body>
+</html>
