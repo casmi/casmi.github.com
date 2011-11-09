@@ -28,7 +28,7 @@
     		<div id="main">
     			
     			<div class="center">
-    				<h1>nuclearPlantsMap</h1>
+    				<h1>nuclear plants map</h1>
     				
     				<div class="contents">
     					<img src="../../img/gallery/npm.jpg"/>
@@ -36,7 +36,7 @@
     					<div class="contentsText">
     						<h2>Abstract</h2>
     						<p>
-    							"Nuclear Plants Map" is a viewer for nuclear power plants on the earth. The data was downloaded from Wikipedia. It visualize nuclear power plants position and size with color and size of cones. It is easy to understand the density of nuclear power plants on the earth. When you click a cone, you can see the name of nulear power plants. Currently, it visualize 153 plants.
+    							"Nuclear Plants Map" is a viewer for nuclear power plants on the earth. The data was downloaded from Wikipedia. It visualize nuclear power plants position and size with color and size of cones. It is easy to understand the density of nuclear power plants on the earth. When you click a cone, you can see the name of nuclear power plants. Currently, it visualize 153 plants.
     						</p>
     						<p>
 	    						<a href="https://github.com/casmi/nuclear-plant-map">
@@ -45,16 +45,16 @@
     						</p>
     						<h2 class="paddingT20">Git Repository</h2>
     							<p>
-    								git://github.com/casmi/nuclear-plant-map
+    								git://github.com/casmi/nuclear-plant-map.git
     							</p>
     					</div>
     					
     					<div class="contentsText marginL10">
     						<h2>Inside of Program</h2>
     						<ol>
-    							<li>It read the list of nuclear power plants with geolocation information from the resources (NuclearPlantsMap.java).</li>
+    							<li>It read the list of nuclear power plants with geo-location information from the resources (NuclearPlantsMap.java).</li>
     							<li>The csv data is read as objects (PowerPlantLoader.java).</li>
-    							<li>After that, the data is set to the appropriate position according to the geolocation. A nuclear power plant is visualized as a cone. The cone size indicates size of nuclear power plant. (CytobandView.java).</li>
+    							<li>After that, the data is set to the appropriate position according to the geo-location. A nuclear power plant is visualized as a cone. The cone size indicates size of nuclear power plant. (NuclearPlantsMap.java).</li>
     							<li>To manipulate the earth, it uses mouse drag (TrackBall.java).</li>
     							<li>It also uses selection buffers to enable to picking cone (NuclearPlantsMap.java).</li>
     						</ol>
