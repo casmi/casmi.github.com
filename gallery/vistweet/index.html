@@ -37,11 +37,11 @@
     						<h2>Abstract</h2>
     						<p>
     							&quot;vistweet&quot; is a application to visualize relations among tweets on Twitter.<br />
-								First, you have to authorize Vital Atlas on Twitter and input PIN code.<br />
-								It reads and analyzes recent tweets when you click a reload button at upper right (or every 5 minutes). <br />
-								When you click a timeline at left, a cluster that consists of your tweet and relational tweets (reply/RT) will be shown.<br />
-								A red line and icon shows "reply," a green shows "official retweet (RT)," and a blue shows "unofficial retweet (QT: quote tweet)."<br />
-								You can change the scale by using plus/minus buttons at upper right.
+								First, you have to authorize Vital Atlas on Twitter and input the PIN code.<br />
+								vistsweet reads and analyzes recent tweets when you click the reload button at the upper right (or every 5 minutes). <br />
+								When you click the timeline at the left, a cluster consisting of your tweets and relational tweets (reply/RT) will be shown.<br />
+								A red line and icon show "reply," the green shows "official retweet (RT)," and the blue shows "unofficial retweet (QT: quote tweet)."<br />
+								You can change the scale by using plus/minus buttons at the upper right.
     						</p>
     						<p>
 	    						<a href="https://github.com/casmi/vistweet">
@@ -55,14 +55,14 @@
     					</div>
     					
     					<div class="contentsText marginL10">
-    						<h2>Inside of Program</h2>
+    						<h2>Inside the Program</h2>
     						<ol>
-    							<li>It reads a timeline of Twitter using Twitter API every 5 minutes (Request.java, Twitter.java).</li>
-    							<li>It parse downloaded JSON data and stores to JSON objects (JsonStatus.java, JsonUser.java).</li>
-    							<li>Then, it maps them on O/R mapping, and insert to a SQLite database (UserTimeline/Mention/Retweet.java).</li>
+    							<li>vistweet reads a timeline of Twitter using the Twitter API every 5 minutes (Request.java, Twitter.java).</li>
+    							<li>It parse downloads JSON data and stores to JSON objects (JsonStatus.java, JsonUser.java).</li>
+    							<li>Then, it maps tweets on O/R mapping, and insert to a SQLite database (UserTimeline/Mention/Retweet.java).</li>
     							<li>After that, it analyzes relations of tweets (reply, RT, QT), and generates a cluster (RootCluster/Cluster.java).</li>
     							<li>It draws a timeline that represents a source tweet and user icons of relative tweets at left in the window.</li>
-    							<li>When you click a tweet in the timeline, it visualizes relations of tweets at right space in the window.</li>
+    							<li>When you click a tweet in the timeline, it visualizes relations of tweets at the right space in the window.</li>
     						</ol>
     						
     						<ul>
