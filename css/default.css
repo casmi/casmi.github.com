@@ -39,6 +39,7 @@ body {
 	width : 100%;
 	margin : 0px;
 	background-color: #000;
+	overflow: scroll;
 }
 
 #wrapper{
