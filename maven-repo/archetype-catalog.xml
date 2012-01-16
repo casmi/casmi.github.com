@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-catalog>
+  <archetypes>
+    <archetype>
+      <groupId>casmi</groupId>
+      <artifactId>casmi-archetype</artifactId>
+      <version>0.0.4-SNAPSHOT</version>
+      <repository>http://casmi.github.com/maven-repo</repository>
+    </archetype>
+  </archetypes>
+</archetype-catalog>
