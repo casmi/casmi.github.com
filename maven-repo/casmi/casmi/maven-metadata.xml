@@ -4,8 +4,8 @@
   <artifactId>casmi</artifactId>
   <versioning>
     <versions>
-      <version>0.0.4-SNAPSHOT</version>
+      <version>0.1.0-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20111014115001</lastUpdated>
+    <lastUpdated>20120204045023</lastUpdated>
   </versioning>
 </metadata>
