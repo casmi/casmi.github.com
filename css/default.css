@@ -57,8 +57,8 @@ body {
 }
 
 #header ul{
-	padding: 43px 0 0 400px;
-	float: left;
+	padding-top: 43px;
+	float: right;
 }
 
 #header ul li{
@@ -134,6 +134,38 @@ body {
 
 .topSpace{
 	margin-top: 55px;
+}
+
+/*tw*/
+#btn_tw_casmi{
+	padding-top: 20px;
+}
+
+#btn_tw_casmi a{
+	display: block;
+	width: 150px;
+	height: 30px;
+	background-image: url("../img/btn_tw.png");
+}
+
+#btn_tw_casmi a:hover{
+	background-image: url("../img/btn_tw_h.png");
+}
+
+/*gh*/
+#btn_gh_casmi{
+	padding-top: 20px;
+}
+
+#btn_gh_casmi a{
+	display: block;
+	width: 150px;
+	height: 30px;
+	background-image: url("../img/btn_gh.png");
+}
+
+#btn_gh_casmi a:hover{
+	background-image: url("../img/btn_gh_h.png");
 }
 
 /*center*/
