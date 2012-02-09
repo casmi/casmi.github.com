@@ -6,6 +6,6 @@ function preload(imgfilename){
 }
 
 preload([
-		"btn_tw.png", "btn_tw_h.png",
-         "btn_gh.png", "btn_gh_h.png"
-        ]);
+	"btn_tw.png", "btn_tw_h.png",
+    "btn_gh.png", "btn_gh_h.png"
+]);

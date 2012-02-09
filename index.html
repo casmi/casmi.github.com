@@ -4,7 +4,15 @@
 
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+        <script type="text/javascript">
+			<!--
+				var imgdirpath = "img";                                                                                                                         
+			-->
+		</script>        
+
         <script type="text/javascript" src="js/preload.js"></script>
+        
 		<meta property="og:title" content="casmi" />
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="http://casmi.github.com/" />
@@ -12,8 +20,8 @@
 		<meta property="og:image" content="http://casmi.github.com/img/icon_og_casmi.jpg" />
 		<meta property="og:site_name" content="casmi" />
 		<meta property="og:description" content="casmi is an opensource free software using a Java based library with OpenGL that in use in production or development of 2D/3D visualization systems." />
-       <link href="css/default.css" rel="stylesheet" type="text/css" />
-       <link href="css/about.css" rel="stylesheet" type="text/css" />
+        <link href="css/default.css" rel="stylesheet" type="text/css" />
+        <link href="css/about.css" rel="stylesheet" type="text/css" />
         <title>casmi</title>
 
     </head>
@@ -23,23 +31,23 @@
     		
     		<div id="header">
     			<a href="/">
-			       <img src="img/logo.png" alt="casmi logo" />
+			        <img src="img/logo.png" alt="casmi logo" />
 				</a>
-		       <ul>
+		        <ul>
 		       		<li><a  class="selected" href="/">About</a></li>
 		       		<li><a href="/download/">Download</a></li>
 		       		<li><a href="https://github.com/casmi/casmi/wiki">Wiki</a></li>
 		       		<li><a href="/gallery/">Gallery</a></li>
-		       </ul>
-		       <div class="bLine clear"></div>
+		        </ul>
+		        <div class="bLine clear"></div>
     		</div>
-    	
+    	    
     		<div id="main">
     			
     			<div class="side">
-    			
+    			    
     				<div class="bLineSide topSpace"></div>
-    			
+    			    
 	    			<p><a href="#overview">Overview</a></p>
     				
     				<div class="bLineSide"></div>
@@ -91,7 +99,7 @@
     					<a href="https://github.com/casmi/" target="_blank">
     					</a>
     				</p>
-    						
+    				
     			</div>
     			
     			<div class="center">
@@ -256,20 +264,20 @@
                             Add following settings to your pom.xml
                         </dd>
                         <dd>
-<pre><code>&lt;repository&gt;
-    &lt;id&gt;casmi&lt;/id&gt;
-    &lt;name&gt;casmi&lt;/name&gt;
-    &lt;url&gt;http://casmi.github.com/maven-repo/&lt;/url&gt;
-&lt;/repository&gt;
-</code></pre>
+                            <pre><code>&lt;repository&gt;
+                                    &lt;id&gt;casmi&lt;/id&gt;
+                                    &lt;name&gt;casmi&lt;/name&gt;
+                                    &lt;url&gt;http://casmi.github.com/maven-repo/&lt;/url&gt;
+                                    &lt;/repository&gt;
+                            </code></pre>
                         </dd>
                         <dd>
-<pre><code>&lt;dependency&gt;
-    &lt;groupId&gt;casmi&lt;/groupId&gt;
-    &lt;artifactId&gt;casmi&lt;/artifactId&gt;
-    &lt;version&gt;0.0.4-SNAPSHOT&lt;/version&gt;
-&lt;/dependency&gt;
-</code></pre>
+                            <pre><code>&lt;dependency&gt;
+                                    &lt;groupId&gt;casmi&lt;/groupId&gt;
+                                    &lt;artifactId&gt;casmi&lt;/artifactId&gt;
+                                    &lt;version&gt;0.0.4-SNAPSHOT&lt;/version&gt;
+                                    &lt;/dependency&gt;
+                            </code></pre>
                         </dd>
                         <dd>
                             Also you can download Quickstart Eclipse project template from <a href="http://casmi.github.com/download/">http://casmi.github.com/download/</a>
@@ -319,119 +327,119 @@
 						</dd>
 						<dt>If you want to export Mac OS X .app file, you can add following settings to pom.xml</dt>
 						<dd>
-<pre><code>&lt;plugin&gt;
-	&lt;groupId&gt;org.codehaus.mojo&lt;/groupId&gt;
-	&lt;artifactId&gt;osxappbundle-maven-plugin&lt;/artifactId&gt;
-	&lt;version&gt;1.0-alpha-1&lt;/version&gt;
-	&lt;configuration&gt;
-		&lt;mainClass&gt;your.application.MainClass&lt;/mainClass&gt;
-	&lt;/configuration&gt;
-	&lt;executions&gt;
-		&lt;execution&gt;
-			&lt;phase&gt;package&lt;/phase&gt;
-			&lt;goals&gt;
-				&lt;goal&gt;bundle&lt;/goal&gt;
-			&lt;/goals&gt;
-		&lt;/execution&gt;
-	&lt;/executions&gt;
-&lt;/plugin&gt;
-</code></pre>
+                            <pre><code>&lt;plugin&gt;
+	                                &lt;groupId&gt;org.codehaus.mojo&lt;/groupId&gt;
+	                                &lt;artifactId&gt;osxappbundle-maven-plugin&lt;/artifactId&gt;
+	                                &lt;version&gt;1.0-alpha-1&lt;/version&gt;
+	                                &lt;configuration&gt;
+		                            &lt;mainClass&gt;your.application.MainClass&lt;/mainClass&gt;
+	                                &lt;/configuration&gt;
+	                                &lt;executions&gt;
+		                            &lt;execution&gt;
+			                        &lt;phase&gt;package&lt;/phase&gt;
+			                        &lt;goals&gt;
+				                    &lt;goal&gt;bundle&lt;/goal&gt;
+			                        &lt;/goals&gt;
+		                            &lt;/execution&gt;
+	                                &lt;/executions&gt;
+                                    &lt;/plugin&gt;
+                            </code></pre>
 						</dd>
 						<dt>If you want to export Windows .exe file, you can add following settings to pom.xml</dt>
 						<dd>
-						<pre><code>&lt;plugin&gt;
-	&lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
-	&lt;artifactId&gt;maven-shade-plugin&lt;/artifactId&gt;&gt;
-	&lt;version&gt;1.4&lt;/version&gt;
-	&lt;executions&gt;
-		&lt;execution&gt;
-			&lt;phase&gt;package&lt;/phase&gt;
-			&lt;goals&gt;
-				&lt;goal&gt;shade&lt;/goal&gt;
-			&lt;/goals&gt;
-		&lt;/execution&gt;
-	&lt;/executions&gt;
-	&lt;configuration&gt;
-		&lt;shadedArtifactAttached&gt;true&lt;/shadedArtifactAttached&gt;
-		&lt;shadedClassifierName&gt;pack&lt;/shadedClassifierName&gt;
-	&lt;/configuration&gt;
-&lt;/plugin&gt;
+						    <pre><code>&lt;plugin&gt;
+	                                &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+	                                &lt;artifactId&gt;maven-shade-plugin&lt;/artifactId&gt;&gt;
+	                                &lt;version&gt;1.4&lt;/version&gt;
+	                                &lt;executions&gt;
+		                            &lt;execution&gt;
+			                        &lt;phase&gt;package&lt;/phase&gt;
+			                        &lt;goals&gt;
+				                    &lt;goal&gt;shade&lt;/goal&gt;
+			                        &lt;/goals&gt;
+		                            &lt;/execution&gt;
+	                                &lt;/executions&gt;
+	                                &lt;configuration&gt;
+		                            &lt;shadedArtifactAttached&gt;true&lt;/shadedArtifactAttached&gt;
+		                            &lt;shadedClassifierName&gt;pack&lt;/shadedClassifierName&gt;
+	                                &lt;/configuration&gt;
+                                    &lt;/plugin&gt;
 
 
-&lt;plugin&gt;
-	&lt;groupId&gt;org.bluestemsoftware.open.maven.plugin&lt;/groupId&gt;
-	&lt;artifactId&gt;launch4j-plugin&lt;/artifactId&gt;
-	&lt;version&gt;1.5.0.0&lt;/version&gt;
-	&lt;executions&gt;
+                                    &lt;plugin&gt;
+	                                &lt;groupId&gt;org.bluestemsoftware.open.maven.plugin&lt;/groupId&gt;
+	                                &lt;artifactId&gt;launch4j-plugin&lt;/artifactId&gt;
+	                                &lt;version&gt;1.5.0.0&lt;/version&gt;
+	                                &lt;executions&gt;
 
-		&lt;!-- GUI exe --&gt;
-		&lt;execution&gt;
-			&lt;id&gt;l4j-gui&lt;/id&gt;
-			&lt;phase&gt;package&lt;/phase&gt;
-			&lt;goals&gt;
-				&lt;goal&gt;launch4j&lt;/goal&gt;
-			&lt;/goals&gt;
-			&lt;configuration&gt;
-				&lt;headerType&gt;gui&lt;/headerType&gt;
-				&lt;outfile&gt;target/${artifactId}_gui.exe&lt;/outfile&gt;
-				&lt;jar&gt;target/${artifactId}-${version}-pack.jar&lt;/jar&gt;
-				&lt;errTitle&gt;your application error&lt;/errTitle&gt;
-				&lt;classPath&gt;
-					&lt;mainClass&gt;your.application.MainClass&lt;/mainClass&gt;
-				&lt;/classPath&gt;
-				&lt;!-- &lt;icon&gt;src/main/resources/icons/exeIcon.ico&lt;/icon&gt; --&gt;
-				&lt;jre&gt;
-					&lt;minVersion&gt;1.5.0&lt;/minVersion&gt;
-					&lt;maxVersion&gt;1.6.0&lt;/maxVersion&gt;
-					&lt;initialHeapSize&gt;128&lt;/initialHeapSize&gt;
-					&lt;maxHeapSize&gt;1024&lt;/maxHeapSize&gt;
-				&lt;/jre&gt;
-				&lt;versionInfo&gt;
-					&lt;fileVersion&gt;1.0.0.0&lt;/fileVersion&gt;
-					&lt;txtFileVersion&gt;1.0.0.0&lt;/txtFileVersion&gt;
-					&lt;fileDescription&gt;Description&lt;/fileDescription&gt;
-					&lt;copyright&gt;your copyright&lt;/copyright&gt;
-					&lt;productVersion&gt;1.0.0.0&lt;/productVersion&gt;
-					&lt;txtProductVersion&gt;1.0.0.0&lt;/txtProductVersion&gt;
-					&lt;productName&gt;Product&lt;/productName&gt;
-					&lt;internalName&gt;Product&lt;/internalName&gt;
-					&lt;originalFilename&gt;your_application.exe&lt;/originalFilename&gt;
-				&lt;/versionInfo&gt;
-			&lt;/configuration&gt;
-		&lt;/execution&gt;
+		                            &lt;!-- GUI exe --&gt;
+		                            &lt;execution&gt;
+			                        &lt;id&gt;l4j-gui&lt;/id&gt;
+			                        &lt;phase&gt;package&lt;/phase&gt;
+			                        &lt;goals&gt;
+				                    &lt;goal&gt;launch4j&lt;/goal&gt;
+			                        &lt;/goals&gt;
+			                        &lt;configuration&gt;
+				                    &lt;headerType&gt;gui&lt;/headerType&gt;
+				                    &lt;outfile&gt;target/${artifactId}_gui.exe&lt;/outfile&gt;
+				                    &lt;jar&gt;target/${artifactId}-${version}-pack.jar&lt;/jar&gt;
+				                    &lt;errTitle&gt;your application error&lt;/errTitle&gt;
+				                    &lt;classPath&gt;
+					                &lt;mainClass&gt;your.application.MainClass&lt;/mainClass&gt;
+				                    &lt;/classPath&gt;
+				                    &lt;!-- &lt;icon&gt;src/main/resources/icons/exeIcon.ico&lt;/icon&gt; --&gt;
+				                    &lt;jre&gt;
+					                &lt;minVersion&gt;1.5.0&lt;/minVersion&gt;
+					                &lt;maxVersion&gt;1.6.0&lt;/maxVersion&gt;
+					                &lt;initialHeapSize&gt;128&lt;/initialHeapSize&gt;
+					                &lt;maxHeapSize&gt;1024&lt;/maxHeapSize&gt;
+				                    &lt;/jre&gt;
+				                    &lt;versionInfo&gt;
+					                &lt;fileVersion&gt;1.0.0.0&lt;/fileVersion&gt;
+					                &lt;txtFileVersion&gt;1.0.0.0&lt;/txtFileVersion&gt;
+					                &lt;fileDescription&gt;Description&lt;/fileDescription&gt;
+					                &lt;copyright&gt;your copyright&lt;/copyright&gt;
+					                &lt;productVersion&gt;1.0.0.0&lt;/productVersion&gt;
+					                &lt;txtProductVersion&gt;1.0.0.0&lt;/txtProductVersion&gt;
+					                &lt;productName&gt;Product&lt;/productName&gt;
+					                &lt;internalName&gt;Product&lt;/internalName&gt;
+					                &lt;originalFilename&gt;your_application.exe&lt;/originalFilename&gt;
+				                    &lt;/versionInfo&gt;
+			                        &lt;/configuration&gt;
+		                            &lt;/execution&gt;
 
-		&lt;!-- CUI exe --&gt;
-		&lt;execution&gt;
-			&lt;id&gt;l4j-cli&lt;/id&gt;
-			&lt;phase&gt;package&lt;/phase&gt;
-			&lt;goals&gt;
-				&lt;goal&gt;launch4j&lt;/goal&gt;
-			&lt;/goals&gt;
-			&lt;configuration&gt;
-				&lt;headerType&gt;console&lt;/headerType&gt;
-				&lt;outfile&gt;target/${artifactId}_cli.exe&lt;/outfile&gt;
-				&lt;jar&gt;target/${artifactId}-${version}-pack.jar&lt;/jar&gt;
-				&lt;errTitle&gt;your application error&lt;/errTitle&gt;
-				&lt;classPath&gt;
-					&lt;mainClass&gt;your.application.MainClass&lt;/mainClass&gt;
-				&lt;/classPath&gt;
-				&lt;!-- &lt;icon&gt;src/main/resources/icons/exeIcon.ico&lt;/icon&gt; --&gt;
-				&lt;jre&gt;
-					&lt;minVersion&gt;1.5.0&lt;/minVersion&gt;
-					&lt;maxVersion&gt;1.6.0&lt;/maxVersion&gt;
-					&lt;initialHeapSize&gt;128&lt;/initialHeapSize&gt;
-					&lt;maxHeapSize&gt;1024&lt;/maxHeapSize&gt;
-				&lt;/jre&gt;
-			&lt;/configuration&gt;
-		&lt;/execution&gt;
-	&lt;/executions&gt;
-&lt;/plugin&gt;
-</code></pre>
+		                            &lt;!-- CUI exe --&gt;
+		                            &lt;execution&gt;
+			                        &lt;id&gt;l4j-cli&lt;/id&gt;
+			                        &lt;phase&gt;package&lt;/phase&gt;
+			                        &lt;goals&gt;
+				                    &lt;goal&gt;launch4j&lt;/goal&gt;
+			                        &lt;/goals&gt;
+			                        &lt;configuration&gt;
+				                    &lt;headerType&gt;console&lt;/headerType&gt;
+				                    &lt;outfile&gt;target/${artifactId}_cli.exe&lt;/outfile&gt;
+				                    &lt;jar&gt;target/${artifactId}-${version}-pack.jar&lt;/jar&gt;
+				                    &lt;errTitle&gt;your application error&lt;/errTitle&gt;
+				                    &lt;classPath&gt;
+					                &lt;mainClass&gt;your.application.MainClass&lt;/mainClass&gt;
+				                    &lt;/classPath&gt;
+				                    &lt;!-- &lt;icon&gt;src/main/resources/icons/exeIcon.ico&lt;/icon&gt; --&gt;
+				                    &lt;jre&gt;
+					                &lt;minVersion&gt;1.5.0&lt;/minVersion&gt;
+					                &lt;maxVersion&gt;1.6.0&lt;/maxVersion&gt;
+					                &lt;initialHeapSize&gt;128&lt;/initialHeapSize&gt;
+					                &lt;maxHeapSize&gt;1024&lt;/maxHeapSize&gt;
+				                    &lt;/jre&gt;
+			                        &lt;/configuration&gt;
+		                            &lt;/execution&gt;
+	                                &lt;/executions&gt;
+                                    &lt;/plugin&gt;
+                            </code></pre>
 						</dd>
 					</dl>
 
     			</div>
-    		
+    		    
     		</div>
     		
     		<div id="footer" class="clear">
@@ -442,7 +450,7 @@
     			</div>
     		</div>
     		
-    	
+    	    
     	</div>
     </body>
 </html>
