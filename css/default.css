@@ -175,9 +175,10 @@ body {
 }
 
 .center h1{
-	font-size: 24px;
+	font-size: 22px;
 	font-weight: normal;
 	padding-bottom: 23px;
+    color: #C0C0C0;
 }
 
 .center h2{
