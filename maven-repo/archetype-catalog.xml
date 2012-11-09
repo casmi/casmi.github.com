@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <archetype-catalog>
   <archetypes>
-      <archetype>
+    <archetype>
+      <groupId>casmi</groupId>
+      <artifactId>casmi-archetype</artifactId>
+      <version>0.3.0</version>
+      <repository>http://casmi.github.com/maven-repo</repository>
+    </archetype>
+    <archetype>
       <groupId>casmi</groupId>
       <artifactId>casmi-archetype</artifactId>
       <version>0.2.0</version>
