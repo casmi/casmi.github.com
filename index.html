@@ -2,451 +2,468 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#">
 
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-        <meta name="keywords" content="casmi, visualization, 2D visualization, 3D visualization, Java" />
-        <meta name="description" content="casmi is a 2D/3D visualization library for Java" />
+    <meta name="keywords" content="casmi, visualization, 2D visualization, 3D visualization, Java" />
+    <meta name="description" content="casmi is a 2D/3D visualization library for Java" />
 
-        <script type="text/javascript">
-			<!--
-				var imgdirpath = "img";                                                                                                                         
-			-->
-		</script>
+    <script type="text/javascript">
+      <!--
+          var imgdirpath = "img";                                                                                                                         
+        -->
+    </script>
 
-        <script type="text/javascript" src="js/preload.js"></script>
+    <script type="text/javascript" src="js/preload.js"></script>
 
-        <meta property="og:title" content="casmi - 2D/3D visualization library for Java" />
-		<meta property="og:type" content="website" />
-		<meta property="og:url" content="http://casmi.github.com/" />
-		<meta property="og:locale" content="en_US" />
-		<meta property="og:image" content="http://casmi.github.com/img/icon_og_casmi.jpg" />
-		<meta property="og:site_name" content="casmi" />
-		<meta property="og:description" content="casmi is a 2D/3D visualization library for Java" />
+    <meta property="og:title" content="casmi - 2D/3D visualization library for Java" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://casmi.github.com/" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image" content="http://casmi.github.com/img/icon_og_casmi.jpg" />
+    <meta property="og:site_name" content="casmi" />
+    <meta property="og:description" content="casmi is a 2D/3D visualization library for Java" />
+
+    <link href="css/default.css" rel="stylesheet" type="text/css" />
+    <link href="css/about.css" rel="stylesheet" type="text/css" />
+    <link href="css/highlight.css" rel="stylesheet" type="text/css" />    
+    
+    <title>casmi - 2D/3D visualization library for Java</title>
+    <script type="text/javascript">
+      
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-29139014-1']);
+      _gaq.push(['_trackPageview']);
+      
+      (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+      
+    </script>
+
+    <script src="js/highlight.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </head>
+
+  <body>
+    <div id="wrapper">
+      
+      <div id="header">
+        <a href="/">
+          <img src="img/logo.png" alt="casmi logo" />
+        </a>
+        <ul>
+          <li><a class="selected" href="/">About</a></li>
+          <li><a href="/apidocs/casmi-0.3.0/">Document</a></li>
+          <li><a href="/download/">Download</a></li>
+          <li><a href="/gallery/">Gallery</a></li>
+        </ul>
+        <div class="bLine clear"></div>
+      </div>
+      
+      <div id="main">
         
-        <link href="css/default.css" rel="stylesheet" type="text/css" />
-        <link href="css/about.css" rel="stylesheet" type="text/css" />
+        <div class="side">
+          
+          <div class="bLineSide topSpace"></div>
+          
+          <p><a href="#overview">Overview</a></p>
+          
+          <div class="bLineSide"></div>
+          
+          <p><a href="#features">Features</a></p>
+          <ul class="featuresList">
+            <li><a href="#one">Open and Free</a></li>
+            <li><a href="#two">Java based using OpenGL</a></li>
+            <li><a href="#three">Cross platform</a></li>
+            <li><a href="#four">Simple and Intuitive</a></li>
+            <li><a href="#five">Suitable for Information Visualization</a></li>
+          </ul>
+          
+          <div class="bLineSide"></div>
+          
+          <p><a href="#news">News</a></p>
+
+          <div class="bLineSide"></div>
+          
+          <p><a href="#get">Getting Started</a></p>
+          <ul>
+            <li><a href="#a">Download and install JOGL JNI library</a></li>
+            <li><a href="#b">Setup casmi</a></li>
+            <li><a href="#c">Create Eclipse project</a></li>
+          </ul>
+          
+          <div class="bLineSide"></div>
+          
+          <p><a href="#faq">FAQ</a></p>
+          
+          <div class="bLineSide"></div>
+          
+          <p id="btn_tw_casmi">
+            <a href="https://twitter.com/casmi_project" target="_blank">
+            </a>
+          </p>
+          <p id="btn_gh_casmi">
+            <a href="https://github.com/casmi/" target="_blank">
+            </a>
+          </p>
+          
+        </div>
         
-        <title>casmi - 2D/3D visualization library for Java</title>
-		<script type="text/javascript">
-		
-		  var _gaq = _gaq || [];
-		  _gaq.push(['_setAccount', 'UA-29139014-1']);
-		  _gaq.push(['_trackPageview']);
-		
-		  (function() {
-		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		  })();
-		
-		</script>
-    </head>
+        <div class="center">
+          <h1>2D/3D visualization library for Java </h1>
+          
+          <h2 id="overview">Overview</h2>
+          <p>
+            casmi is a 2D/3D visualization library for Java. It can support programmers with simple and intuitive interfaces for implementation. It can work on cross platform (GNU/Linux, Mac OS X, and Windows). casmi is suitable for visualization, because it is originally designed for information visualization, especially with huge data sets.
+          </p>
+          
+          <h2 id="features">Features</h2>
+          <h3>casmi has 5 big features.</h3>
+          <ol class="cap">
+            <li>Open and Free</li>
+            <li>Java based using OpenGL</li>
+            <li>Cross platform</li>
+            <li>Simple and Intuitive</li>
+            <li>Suitable for Information Visualization</li>
+          </ol>
+          
+          <h3 id="one">Open and Free</h3>
+          <p class="cap">
+            casmi is an opensource and free software under LGPL license. You are free to download and use it. You are free to download the source codes.
+          </p>
+          
+          <h3 id="two">Java based using OpenGL</h3>
+          <p class="cap">
+            casmi takes over the features of Java and OpenGL. casmi can write in Java, which is an object oriented language. It has the function of garbage collection, so you don't have to think about memory leaks. You can use extention using JNI which enables fast calculation with native machine code instead of JVM.
+          </p>
+          
+          <h3 id="three">Cross platform</h3>
+          <p class="cap">
+            casmi works on cross platform environments (GNU/Linux, Mac OS X and Windows). It can also has a function of binary export for app (Mac OS X) and exe (Windows). You can use any environment.
+          </p>
 
-    <body>
-    	<div id="wrapper">
-    		
-    		<div id="header">
-    			<a href="/">
-			       <img src="img/logo.png" alt="casmi logo" />
-				</a>
-		       <ul>
-		       		<li><a class="selected" href="/">About</a></li>
-		       		<li><a href="/apidocs/casmi-0.3.0/">Document</a></li>
-		       		<li><a href="/download/">Download</a></li>
-		       		<li><a href="/gallery/">Gallery</a></li>
-		       </ul>
-		       <div class="bLine clear"></div>
-    		</div>
-    	
-    		<div id="main">
-    			
-    			<div class="side">
-    			
-    				<div class="bLineSide topSpace"></div>
-    			
-	    			<p><a href="#overview">Overview</a></p>
-    				
-    				<div class="bLineSide"></div>
-    				
-	    			<p><a href="#features">Features</a></p>
-    				<ul class="featuresList">
-    					<li><a href="#one">Open and Free</a></li>
-    					<li><a href="#two">Java based using OpenGL</a></li>
-    					<li><a href="#three">Cross platform</a></li>
-    					<li><a href="#four">Simple and Intuitive</a></li>
-    					<li><a href="#five">Suitable for Information Visualization</a></li>
-    				</ul>
-    				
-    				<div class="bLineSide"></div>
-    				
-	    			<p><a href="#news">News</a></p>
-
-                    <div class="bLineSide"></div>
-                    
-	    			<p><a href="#get">Getting Started</a></p>
-   					<ul>
-   		 				<li><a href="#a">Download and install JOGL JNI library</a></li>
-    					<li><a href="#b">Setup casmi</a></li>
-    				</ul>
-    				
-    				<div class="bLineSide"></div>
-    				
-	    			<p><a href="#faq">FAQ</a></p>
-    				
-    				<div class="bLineSide"></div>
-    				
-    				<p id="btn_tw_casmi">
-    					<a href="https://twitter.com/casmi_project" target="_blank">
-    					</a>
-    				</p>
-    				<p id="btn_gh_casmi">
-    					<a href="https://github.com/casmi/" target="_blank">
-    					</a>
-    				</p>
-    						
-    			</div>
-    			
-    			<div class="center">
-    				<h1>2D/3D visualization library for Java </h1>
-    				
-    				<h2 id="overview">Overview</h2>
-    				<p>
-    					casmi is a 2D/3D visualization library for Java. It can support programmers with simple and intuitive interfaces for implementation. It can work on cross platform (GNU/Linux, Mac OS X, and Windows). casmi is suitable for visualization, because it is originally designed for information visualization, especially with huge data sets.
-    				</p>
-					
-					<h2 id="features">Features</h2>
-					<h3>casmi has 5 big features.</h3>
-					<ol class="cap">
-						<li>Open and Free</li>
-						<li>Java based using OpenGL</li>
-						<li>Cross platform</li>
-						<li>Simple and Intuitive</li>
-						<li>Suitable for Information Visualization</li>
-					</ol>
-					
-					<h3 id="one">Open and Free</h3>
-					<p class="cap">
-						casmi is an opensource and free software under LGPL license. You are free to download and use it. You are free to download the source codes.
-					</p>
-					
-					<h3 id="two">Java based using OpenGL</h3>
-					<p class="cap">
-						casmi takes over the features of Java and OpenGL. casmi can write in Java, which is an object oriented language. It has the function of garbage collection, so you don't have to think about memory leaks. You can use extention using JNI which enables fast calculation with native machine code instead of JVM.
-					</p>
-					
-					<h3 id="three">Cross platform</h3>
-					<p class="cap">
-						casmi works on cross platform environments (GNU/Linux, Mac OS X and Windows). It can also has a function of binary export for app (Mac OS X) and exe (Windows). You can use any environment.
-					</p>
-
-					<h3 id="four">Simple and Intuitive</h3>
-					<p class="cap">
-						casmi is designed to support programmers and developers to implement visualization systems quickly and easily. casmi has several convinient functions for supporting network, database IO, and File IO. It can support HTTP for network, SQLite for database, CSV, XML, and JSON for file IO. It has support for MySQL. It will also have functions for animations and timelines which control various scenes by time.
-					</p>
-					
-					<h3 id="five">Suitable for Information Visualization</h3>
-					<p class="cap">
-						casmi is designed for information visualization, especially with huge data sets. It has methods to draw OpenGL graphics which can be used for visualization. casmi has a function to support database IO and file IO,  by combining these functions, you can develop systems for visualization quite easily. It will has a fuction to generate graphs. It will add simulation fuctions, for example: physical simulation.
-					</p>
-					
-					<table>
-						<tr>
-							<th class ="border_left"></th>
-							<td>casmi</td>
-							<td>Processing</td>
-							<td>openFrameworks</td>
-							<td>Flash/AIR</td>
-						</tr>
-						<tr>
-							<th class ="border_left">Supporting GPU</th>
-							<td><img src="img/img_o.png" /></td>
-							<td><img src="img/img_r.png" /></td>
-							<td><img src="img/img_o.png" /></td>
-							<td><img src="img/img_r.png" /></td>
-						</tr>
-						<tr>
-							<th class ="border_left">Garbage Collection</th>
-							<td><img src="img/img_o.png" /></td>
-							<td><img src="img/img_o.png" /></td>
-							<td><img src="img/img_x.png" /></td>
-							<td><img src="img/img_o.png" /></td>
-						</tr>
-						<tr>
-							<th class ="border_left">Open and Free</th>
-							<td ><img src="img/img_o.png" /></td>
-							<td><img src="img/img_o.png" /></td>
-							<td><img src="img/img_o.png" /></td>
-							<td><img src="img/img_x.png" /></td>
-						</tr>
-						<tr>
-							<th class ="border_left">Object Oriented Programming</th>
-							<td><img src="img/img_o.png" /></td>
-							<td><img src="img/img_x.png" /></td>
-							<td><img src="img/img_o.png" /></td>
-							<td><img src="img/img_o.png" /></td>
-						</tr>
-						<tr>
-							<th class ="border_left">Cross Platform</th>
-							<td><img src="img/img_o.png" /></td>
-							<td><img src="img/img_o.png" /></td>
-							<td><img src="img/img_r.png" /></td>
-							<td><img src="img/img_o.png" /></td>
-						</tr>
-						<tr>
-							<th class ="border_none">Programming Language</th>
-							<td class="border_bottom">Java</td>
-							<td class="border_bottom">Processing Original</td>
-							<td class="border_bottom">C++</td>
-							<td class="border_bottom">ActionScript</td>
-						</tr>
-					</table>
-					
-					<h2 id="news">News</h2>
-					<ul class="newsList">
+          <h3 id="four">Simple and Intuitive</h3>
+          <p class="cap">
+            casmi is designed to support programmers and developers to implement visualization systems quickly and easily. casmi has several convinient functions for supporting network, database IO, and File IO. It can support HTTP for network, SQLite for database, CSV, XML, and JSON for file IO. It has support for MySQL. It will also have functions for animations and timelines which control various scenes by time.
+          </p>
+          
+          <h3 id="five">Suitable for Information Visualization</h3>
+          <p class="cap">
+            casmi is designed for information visualization, especially with huge data sets. It has methods to draw OpenGL graphics which can be used for visualization. casmi has a function to support database IO and file IO,  by combining these functions, you can develop systems for visualization quite easily. It will has a fuction to generate graphs. It will add simulation fuctions, for example: physical simulation.
+          </p>
+          
+          <table>
+            <tr>
+              <th class ="border_left"></th>
+              <td>casmi</td>
+              <td>Processing</td>
+              <td>openFrameworks</td>
+              <td>Flash/AIR</td>
+            </tr>
+            <tr>
+              <th class ="border_left">Supporting GPU</th>
+              <td><img src="img/img_o.png" /></td>
+              <td><img src="img/img_r.png" /></td>
+              <td><img src="img/img_o.png" /></td>
+              <td><img src="img/img_r.png" /></td>
+            </tr>
+            <tr>
+              <th class ="border_left">Garbage Collection</th>
+              <td><img src="img/img_o.png" /></td>
+              <td><img src="img/img_o.png" /></td>
+              <td><img src="img/img_x.png" /></td>
+              <td><img src="img/img_o.png" /></td>
+            </tr>
+            <tr>
+              <th class ="border_left">Open and Free</th>
+              <td ><img src="img/img_o.png" /></td>
+              <td><img src="img/img_o.png" /></td>
+              <td><img src="img/img_o.png" /></td>
+              <td><img src="img/img_x.png" /></td>
+            </tr>
+            <tr>
+              <th class ="border_left">Object Oriented Programming</th>
+              <td><img src="img/img_o.png" /></td>
+              <td><img src="img/img_x.png" /></td>
+              <td><img src="img/img_o.png" /></td>
+              <td><img src="img/img_o.png" /></td>
+            </tr>
+            <tr>
+              <th class ="border_left">Cross Platform</th>
+              <td><img src="img/img_o.png" /></td>
+              <td><img src="img/img_o.png" /></td>
+              <td><img src="img/img_r.png" /></td>
+              <td><img src="img/img_o.png" /></td>
+            </tr>
+            <tr>
+              <th class ="border_none">Programming Language</th>
+              <td class="border_bottom">Java</td>
+              <td class="border_bottom">Processing Original</td>
+              <td class="border_bottom">C++</td>
+              <td class="border_bottom">ActionScript</td>
+            </tr>
+          </table>
+          
+          <h2 id="news">News</h2>
+          <ul class="newsList">
             <li>Nov. 9th, 2012: casmi version 0.3.0 is released.</li>
             <li>Jul. 30th, 2012: casmi version 0.2.0 is released.</li>
             <li>Jun. 5th, 2012: casmi version 0.1.3-SNAPSHOT is released.</li>
             <li>May 29th, 2012: casmi version 0.1.2-SNAPSHOT is released.</li>
             <li>March 30th, 2012: casmi version 0.1.1-SNAPSHOT is released.</li>                        
             <li>February 4th, 2012: casmi version 0.1.0-SNAPSHOT is released.</li>
-						<li>October 14th, 2011: casmi version 0.0.4 alpha is released.</li>
-						<li>September 2nd, 2011: casmi version 0.0.3 alpha is released.</li>
-						<li>August 19th, 2011: casmi version 0.0.2 alpha is released.</li>
-						<li>August 2nd, 2011: casmi version 0.0.1 alpha is released.</li>
-					</ul>
+            <li>October 14th, 2011: casmi version 0.0.4 alpha is released.</li>
+            <li>September 2nd, 2011: casmi version 0.0.3 alpha is released.</li>
+            <li>August 19th, 2011: casmi version 0.0.2 alpha is released.</li>
+            <li>August 2nd, 2011: casmi version 0.0.1 alpha is released.</li>
+          </ul>
 
-					<h2 id="get">Getting Started</h2>
-					<ol>
-						<li>Download jar file or source file</li>
-						<li>Setup casmi</li>
-					</ol>
-                    
-                    <h3 id="a">Download and Install  JOGL JNI library</h3>
-                    <dl>
-                        <dd>
-					        You can download JOGL JNI library from <a href="http://casmi.github.com/download/">http://casmi.github.com/download/</a>
-                            and copy extracted files from this to directory under <strong>java.library.path</strong>. Typical directories under <strong>java.library.path</strong> are followings.
-                        </dd>
-                        <dt class="platform">GNU/Linux</dt>
-                        <dd>
-                            <ul class="libpath">
-                                <li>/usr/local/lib</li>
-                                <li>/usr/lib</li>
-                                <li>/lib</li>
-                            </ul>
-                        </dd>
-                        <dt class="platform">Mac OS X</dt>
-                        <dd>
-                            <ul class="libpath">
-                                <li>/Library/Java/Extensions</li>
-                                <li>/System/Library/Java/Extensions</li>
-                                <li>/usr/lib/java</li>
-                            </ul>
-                        </dd>
-                        <dt class="platform">Windows</dt>
-                        <dd>
-                            <ul class="libpath">
-                                <li>C:\Windows\system32</li>
-                                <li>C:\Windows</li>
-                            </ul>
-                        </dd>
-                    </dl>
+          <h2 id="get">Getting Started</h2>
+          
+          <h3 id="a">1. Download and Install JNI libraries for JOGL (~ver.0.1.3-SNAPSHOT)</h3>
+          <dl>
+            <dd>
+              If you use casmi ver.0.2.0 and higher version, you do not have to
+              install JNI libraries for JOGL.
+              Skip this section.
+            </dd>
+            <dd>
+              You can download JOGL JNI library from <a href="http://casmi.github.com/download/">http://casmi.github.com/download/</a>
+              and copy extracted files from this to directory under <strong>java.library.path</strong>. Typical directories under <strong>java.library.path</strong> are followings.
+            </dd>
+            <dt class="platform">GNU/Linux</dt>
+            <dd>
+              <ul class="libpath">
+                <li>/usr/local/lib</li>
+                <li>/usr/lib</li>
+                <li>/lib</li>
+              </ul>
+            </dd>
+            <dt class="platform">Mac OS X</dt>
+            <dd>
+              <ul class="libpath">
+                <li>/Library/Java/Extensions</li>
+                <li>/System/Library/Java/Extensions</li>
+                <li>/usr/lib/java</li>
+              </ul>
+            </dd>
+            <dt class="platform">Windows</dt>
+            <dd>
+              <ul class="libpath">
+                <li>C:\Windows\system32</li>
+                <li>C:\Windows</li>
+              </ul>
+            </dd>
+          </dl>
 
-                    <h3 id="b">Setup casmi</h3>
-                    <dl>
-                        <dt>Using maven (we recommend to use maven)</dt>
-                        <dd>
-                            Add following settings to your pom.xml
-                        </dd>
-                        <dd>
-<pre><code>&lt;repository&gt;
+          <h3 id="b">2. Setup casmi</h3>
+          <dl>
+            <dt>Using maven (we recommend to use maven)</dt>
+            <dd>
+              Add following settings to your pom.xml.
+            </dd>
+            <dd>
+              <pre><code>&lt;repository&gt;
     &lt;id&gt;casmi&lt;/id&gt;
     &lt;name&gt;casmi&lt;/name&gt;
     &lt;url&gt;http://casmi.github.com/maven-repo/&lt;/url&gt;
-&lt;/repository&gt;
-</code></pre>
-                        </dd>
-                        <dd>
-<pre><code>&lt;dependency&gt;
+&lt;/repository&gt;</code></pre>
+            </dd>
+            <dd>
+              <pre><code>&lt;dependency&gt;
     &lt;groupId&gt;casmi&lt;/groupId&gt;
     &lt;artifactId&gt;casmi&lt;/artifactId&gt;
-    &lt;version&gt;0.0.4-SNAPSHOT&lt;/version&gt;
-&lt;/dependency&gt;
-</code></pre>
-                        </dd>
-                        <dd>
-                            Also you can download Quickstart Eclipse project template from <a href="http://casmi.github.com/download/">http://casmi.github.com/download/</a>
-                        </dd>
-                        <dt>Others</dt>
-                        <dd>
-                            You can download binary jar from <a href="http://casmi.github.com/download/">http://casmi.github.com/download/</a>
-                        </dd>
-                    </dl>
+    &lt;version&gt;0.3.0&lt;/version&gt;
+&lt;/dependency&gt;</code></pre>
+            </dd>
+            <dd>
+              All dependent libraries will be downloaded automatically if using maven.
+            </dd>
 
-					<h2 id="faq">FAQ</h2>
-					<dl>
-						<dt>What is casmi?</dt>
-						<dd>
-							casmi is a Java-based library for visualization, data access, and data analysis. It is designed for programmers to write their applications easily and quickly. And it is opensource.
-						</dd>
-						<dt>Why is casmi opensource software?</dt>
-						<dd>
-							Contributers want casmi to be used widely all over the world. And they hope there are many kind contributers to help casmi grow.
-						</dd>
-						<dt>What kind of license does casmi have?</dt>
-						<dd>
-							casmi has LGPL version 3 license for opensource version.
-						</dd>
-						<dt>What I do when I want to be involved in the casmi project?</dt>
-						<dd>
-							Please contact us.
-							<a href="https://github.com/casmi">
-								https://github.com/casmi
-							</a>
-						</dd>
-						<dt>Who had the idea of casmi?</dt>
-						<dd>
-							Members of Xcoo, Inc. thought up the idea of casmi. They are developing customized visualization software, so they thought it would be convienient if they had a good library for visualization software. Thus they started development of casmi from June 2011.
-						</dd>
-						<dt>What the difference between casmi and its precursors?</dt>
-						<dd>
-							casmi is designed for visualization and serious applications. For visualization, there are Processing development environments and OpenFrameworks. They are our precursors. Their main targets are artists and beginning programmers. Our target is the business man and programmer. 
-						</dd>
-						<dt>If we want to ask someone to develop our systems using casmi, what should we do?</dt>
-						<dd>
-							Please contact Xcoo, Inc. They can help you.
-						</dd>
-						<dt>What is Xcoo, Inc. ?</dt>
-						<dd>
-							Xcoo, Inc. is a startup company for research and development of visualization and interactive systems, located in Tokyo, Japan. They began their business on April 1st, 2011.  The backgrounds of members of Xcoo, Inc include virtual reality, computer science, and design. Please visit their website. <a href="http://www.xcoo.jp/">http://www.xcoo.jp/</a>
-						</dd>
-						<dt>If you want to export Mac OS X .app file, you can add following settings to pom.xml</dt>
-						<dd>
-<pre><code>&lt;plugin&gt;
-	&lt;groupId&gt;org.codehaus.mojo&lt;/groupId&gt;
-	&lt;artifactId&gt;osxappbundle-maven-plugin&lt;/artifactId&gt;
-	&lt;version&gt;1.0-alpha-1&lt;/version&gt;
-	&lt;configuration&gt;
-		&lt;mainClass&gt;your.application.MainClass&lt;/mainClass&gt;
-	&lt;/configuration&gt;
-	&lt;executions&gt;
-		&lt;execution&gt;
-			&lt;phase&gt;package&lt;/phase&gt;
-			&lt;goals&gt;
-				&lt;goal&gt;bundle&lt;/goal&gt;
-			&lt;/goals&gt;
-		&lt;/execution&gt;
-	&lt;/executions&gt;
-&lt;/plugin&gt;
-</code></pre>
-						</dd>
-						<dt>If you want to export Windows .exe file, you can add following settings to pom.xml</dt>
-						<dd>
-						<pre><code>&lt;plugin&gt;
-	&lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
-	&lt;artifactId&gt;maven-shade-plugin&lt;/artifactId&gt;&gt;
-	&lt;version&gt;1.4&lt;/version&gt;
-	&lt;executions&gt;
-		&lt;execution&gt;
-			&lt;phase&gt;package&lt;/phase&gt;
-			&lt;goals&gt;
-				&lt;goal&gt;shade&lt;/goal&gt;
-			&lt;/goals&gt;
-		&lt;/execution&gt;
-	&lt;/executions&gt;
-	&lt;configuration&gt;
-		&lt;shadedArtifactAttached&gt;true&lt;/shadedArtifactAttached&gt;
-		&lt;shadedClassifierName&gt;pack&lt;/shadedClassifierName&gt;
-	&lt;/configuration&gt;
-&lt;/plugin&gt;
+            <dt>Others</dt>
+            <dd>
+              You can download binary jar from <a href="http://casmi.github.com/download/">http://casmi.github.com/download/</a>
+            </dd>
+          </dl>
 
+          <h3 id="c">3. Create Eclipse project</h3>
+          <dl>
+            <dt>Maven Archetype</dt>
+            <dd>
+              You can use maven archetype for casmi project.
+              Archetype catalog is <a href="http://casmi.github.com/maven-repo/archetype-catalog.xml">http://casmi.github.com/maven-repo/archetype-catalog.xml</a>
+            </dd>
+            <dd>
+              <pre><code class="bash">$ mvn archetype:generate -DarchetypeCatalog=http://casmi.github.com/maven-repo/archetype-catalog.xml</code></pre>
+            </dd>
+
+            <dt>Quickstart project for Eclipse</dt>
+            <dd>
+              Also you can download Quickstart Eclipse project template from <a href="http://casmi.github.com/download/">http://casmi.github.com/download/</a>
+            </dd>
+          </dl>
+
+          <h2 id="faq">FAQ</h2>
+          <dl>
+            <dt>What is casmi?</dt>
+            <dd>
+              casmi is a Java-based library for visualization, data access, and data analysis. It is designed for programmers to write their applications easily and quickly. And it is opensource.
+            </dd>
+            <dt>Why is casmi opensource software?</dt>
+            <dd>
+              Contributers want casmi to be used widely all over the world. And they hope there are many kind contributers to help casmi grow.
+            </dd>
+            <dt>What kind of license does casmi have?</dt>
+            <dd>
+              casmi has LGPL version 3 license for opensource version.
+            </dd>
+            <dt>What I do when I want to be involved in the casmi project?</dt>
+            <dd>
+              Please contact us.
+              <a href="https://github.com/casmi">
+                https://github.com/casmi
+              </a>
+            </dd>
+            <dt>Who had the idea of casmi?</dt>
+            <dd>
+              Members of Xcoo, Inc. thought up the idea of casmi. They are developing customized visualization software, so they thought it would be convienient if they had a good library for visualization software. Thus they started development of casmi from June 2011.
+            </dd>
+            <dt>What the difference between casmi and its precursors?</dt>
+            <dd>
+              casmi is designed for visualization and serious applications. For visualization, there are Processing development environments and OpenFrameworks. They are our precursors. Their main targets are artists and beginning programmers. Our target is the business man and programmer. 
+            </dd>
+            <dt>If we want to ask someone to develop our systems using casmi, what should we do?</dt>
+            <dd>
+              Please contact Xcoo, Inc. They can help you.
+            </dd>
+            <dt>What is Xcoo, Inc. ?</dt>
+            <dd>
+              Xcoo, Inc. is a startup company for research and development of visualization and interactive systems, located in Tokyo, Japan. They began their business on April 1st, 2011.  The backgrounds of members of Xcoo, Inc include virtual reality, computer science, and design. Please visit their website. <a href="http://www.xcoo.jp/">http://www.xcoo.jp/</a>
+            </dd>
+            <dt>If you want to export Mac OS X .app file, you can add following settings to pom.xml</dt>
+            <dd>
+              <pre><code>&lt;plugin&gt;
+    &lt;groupId&gt;org.codehaus.mojo&lt;/groupId&gt;
+    &lt;artifactId&gt;osxappbundle-maven-plugin&lt;/artifactId&gt;
+    &lt;version&gt;1.0-alpha-1&lt;/version&gt;
+    &lt;configuration&gt;
+        &lt;mainClass&gt;your.application.MainClass&lt;/mainClass&gt;
+    &lt;/configuration&gt;
+    &lt;executions&gt;
+        &lt;execution&gt;
+            &lt;phase&gt;package&lt;/phase&gt;
+            &lt;goals&gt;
+                &lt;goal&gt;bundle&lt;/goal&gt;
+            &lt;/goals&gt;
+        &lt;/execution&gt;
+    &lt;/executions&gt;
+&lt;/plugin&gt;</code></pre>
+            </dd>
+            <dt>If you want to export Windows .exe file, you can add following settings to pom.xml</dt>
+            <dd>
+              <pre><code>&lt;plugin&gt;
+    &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+    &lt;artifactId&gt;maven-shade-plugin&lt;/artifactId&gt;&gt;
+    &lt;version&gt;1.4&lt;/version&gt;
+    &lt;executions&gt;
+        &lt;execution&gt;
+            &lt;phase&gt;package&lt;/phase&gt;
+            &lt;goals&gt;
+                &lt;goal&gt;shade&lt;/goal&gt;
+            &lt;/goals&gt;
+        &lt;/execution&gt;
+    &lt;/executions&gt;
+    &lt;configuration&gt;
+        &lt;shadedArtifactAttached&gt;true&lt;/shadedArtifactAttached&gt;
+        &lt;shadedClassifierName&gt;pack&lt;/shadedClassifierName&gt;
+    &lt;/configuration&gt;
+&lt;/plugin&gt;
 
 &lt;plugin&gt;
-	&lt;groupId&gt;org.bluestemsoftware.open.maven.plugin&lt;/groupId&gt;
-	&lt;artifactId&gt;launch4j-plugin&lt;/artifactId&gt;
-	&lt;version&gt;1.5.0.0&lt;/version&gt;
-	&lt;executions&gt;
+    &lt;groupId&gt;org.bluestemsoftware.open.maven.plugin&lt;/groupId&gt;
+    &lt;artifactId&gt;launch4j-plugin&lt;/artifactId&gt;
+    &lt;version&gt;1.5.0.0&lt;/version&gt;
+    &lt;executions&gt;
 
-		&lt;!-- GUI exe --&gt;
-		&lt;execution&gt;
-			&lt;id&gt;l4j-gui&lt;/id&gt;
-			&lt;phase&gt;package&lt;/phase&gt;
-			&lt;goals&gt;
-				&lt;goal&gt;launch4j&lt;/goal&gt;
-			&lt;/goals&gt;
-			&lt;configuration&gt;
-				&lt;headerType&gt;gui&lt;/headerType&gt;
-				&lt;outfile&gt;target/${artifactId}_gui.exe&lt;/outfile&gt;
-				&lt;jar&gt;target/${artifactId}-${version}-pack.jar&lt;/jar&gt;
-				&lt;errTitle&gt;your application error&lt;/errTitle&gt;
-				&lt;classPath&gt;
-					&lt;mainClass&gt;your.application.MainClass&lt;/mainClass&gt;
-				&lt;/classPath&gt;
-				&lt;!-- &lt;icon&gt;src/main/resources/icons/exeIcon.ico&lt;/icon&gt; --&gt;
-				&lt;jre&gt;
-					&lt;minVersion&gt;1.5.0&lt;/minVersion&gt;
-					&lt;maxVersion&gt;1.6.0&lt;/maxVersion&gt;
-					&lt;initialHeapSize&gt;128&lt;/initialHeapSize&gt;
-					&lt;maxHeapSize&gt;1024&lt;/maxHeapSize&gt;
-				&lt;/jre&gt;
-				&lt;versionInfo&gt;
-					&lt;fileVersion&gt;1.0.0.0&lt;/fileVersion&gt;
-					&lt;txtFileVersion&gt;1.0.0.0&lt;/txtFileVersion&gt;
-					&lt;fileDescription&gt;Description&lt;/fileDescription&gt;
-					&lt;copyright&gt;your copyright&lt;/copyright&gt;
-					&lt;productVersion&gt;1.0.0.0&lt;/productVersion&gt;
-					&lt;txtProductVersion&gt;1.0.0.0&lt;/txtProductVersion&gt;
-					&lt;productName&gt;Product&lt;/productName&gt;
-					&lt;internalName&gt;Product&lt;/internalName&gt;
-					&lt;originalFilename&gt;your_application.exe&lt;/originalFilename&gt;
-				&lt;/versionInfo&gt;
-			&lt;/configuration&gt;
-		&lt;/execution&gt;
+        &lt;!-- GUI exe --&gt;
+        &lt;execution&gt;
+            &lt;id&gt;l4j-gui&lt;/id&gt;
+            &lt;phase&gt;package&lt;/phase&gt;
+            &lt;goals&gt;
+                &lt;goal&gt;launch4j&lt;/goal&gt;
+            &lt;/goals&gt;
+            &lt;configuration&gt;
+                &lt;headerType&gt;gui&lt;/headerType&gt;
+                &lt;outfile&gt;target/${artifactId}_gui.exe&lt;/outfile&gt;
+                &lt;jar&gt;target/${artifactId}-${version}-pack.jar&lt;/jar&gt;
+                &lt;errTitle&gt;your application error&lt;/errTitle&gt;
+                &lt;classPath&gt;
+                    &lt;mainClass&gt;your.application.MainClass&lt;/mainClass&gt;
+                &lt;/classPath&gt;
+                &lt;!-- &lt;icon&gt;src/main/resources/icons/exeIcon.ico&lt;/icon&gt; --&gt;
+                &lt;jre&gt;
+                    &lt;minVersion&gt;1.5.0&lt;/minVersion&gt;
+                    &lt;maxVersion&gt;1.6.0&lt;/maxVersion&gt;
+                    &lt;initialHeapSize&gt;128&lt;/initialHeapSize&gt;
+                    &lt;maxHeapSize&gt;1024&lt;/maxHeapSize&gt;
+                &lt;/jre&gt;
+                &lt;versionInfo&gt;
+                    &lt;fileVersion&gt;1.0.0.0&lt;/fileVersion&gt;
+                    &lt;txtFileVersion&gt;1.0.0.0&lt;/txtFileVersion&gt;
+                    &lt;fileDescription&gt;Description&lt;/fileDescription&gt;
+                    &lt;copyright&gt;your copyright&lt;/copyright&gt;
+                    &lt;productVersion&gt;1.0.0.0&lt;/productVersion&gt;
+                    &lt;txtProductVersion&gt;1.0.0.0&lt;/txtProductVersion&gt;
+                    &lt;productName&gt;Product&lt;/productName&gt;
+                    &lt;internalName&gt;Product&lt;/internalName&gt;
+                    &lt;originalFilename&gt;your_application.exe&lt;/originalFilename&gt;
+                &lt;/versionInfo&gt;
+            &lt;/configuration&gt;
+        &lt;/execution&gt;
 
-		&lt;!-- CUI exe --&gt;
-		&lt;execution&gt;
-			&lt;id&gt;l4j-cli&lt;/id&gt;
-			&lt;phase&gt;package&lt;/phase&gt;
-			&lt;goals&gt;
-				&lt;goal&gt;launch4j&lt;/goal&gt;
-			&lt;/goals&gt;
-			&lt;configuration&gt;
-				&lt;headerType&gt;console&lt;/headerType&gt;
-				&lt;outfile&gt;target/${artifactId}_cli.exe&lt;/outfile&gt;
-				&lt;jar&gt;target/${artifactId}-${version}-pack.jar&lt;/jar&gt;
-				&lt;errTitle&gt;your application error&lt;/errTitle&gt;
-				&lt;classPath&gt;
-					&lt;mainClass&gt;your.application.MainClass&lt;/mainClass&gt;
-				&lt;/classPath&gt;
-				&lt;!-- &lt;icon&gt;src/main/resources/icons/exeIcon.ico&lt;/icon&gt; --&gt;
-				&lt;jre&gt;
-					&lt;minVersion&gt;1.5.0&lt;/minVersion&gt;
-					&lt;maxVersion&gt;1.6.0&lt;/maxVersion&gt;
-					&lt;initialHeapSize&gt;128&lt;/initialHeapSize&gt;
-					&lt;maxHeapSize&gt;1024&lt;/maxHeapSize&gt;
-				&lt;/jre&gt;
-			&lt;/configuration&gt;
-		&lt;/execution&gt;
-	&lt;/executions&gt;
-&lt;/plugin&gt;
-</code></pre>
-						</dd>
-					</dl>
+        &lt;!-- CUI exe --&gt;
+        &lt;execution&gt;
+            &lt;id&gt;l4j-cli&lt;/id&gt;
+            &lt;phase&gt;package&lt;/phase&gt;
+            &lt;goals&gt;
+                &lt;goal&gt;launch4j&lt;/goal&gt;
+            &lt;/goals&gt;
+            &lt;configuration&gt;
+                &lt;headerType&gt;console&lt;/headerType&gt;
+                &lt;outfile&gt;target/${artifactId}_cli.exe&lt;/outfile&gt;
+                &lt;jar&gt;target/${artifactId}-${version}-pack.jar&lt;/jar&gt;
+                &lt;errTitle&gt;your application error&lt;/errTitle&gt;
+                &lt;classPath&gt;
+                    &lt;mainClass&gt;your.application.MainClass&lt;/mainClass&gt;
+                &lt;/classPath&gt;
+                &lt;!-- &lt;icon&gt;src/main/resources/icons/exeIcon.ico&lt;/icon&gt; --&gt;
+                &lt;jre&gt;
+                    &lt;minVersion&gt;1.5.0&lt;/minVersion&gt;
+                    &lt;maxVersion&gt;1.6.0&lt;/maxVersion&gt;
+                    &lt;initialHeapSize&gt;128&lt;/initialHeapSize&gt;
+                    &lt;maxHeapSize&gt;1024&lt;/maxHeapSize&gt;
+                &lt;/jre&gt;
+            &lt;/configuration&gt;
+        &lt;/execution&gt;
+    &lt;/executions&gt;
+&lt;/plugin&gt;</code></pre>
+            </dd>
+          </dl>
 
-    			</div>
-    		
-    		</div>
-    		
-    		<div id="footer" class="clear">
-    			<div class="bLine"></div>
-    			<div class="copyright">
-	    			<p>casmi was initiated by Xcoo, Inc.</p>
-    				<span>Copyright &copy; 2011 Xcoo, Inc. All rights reserved.</span>
-    			</div>
-    		</div>
-    		
-    	
-    	</div>
-    </body>
+        </div>        
+      </div>
+      
+      <div id="footer" class="clear">
+        <div class="bLine"></div>
+        <div class="copyright">
+          <p>casmi was initiated by Xcoo, Inc.</p>
+          <span>Copyright &copy; 2011 Xcoo, Inc. All rights reserved.</span>
+        </div>
+      </div>
+      
+    </div>
+  </body>
 </html>
