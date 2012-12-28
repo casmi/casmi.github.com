@@ -1,0 +1,45 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>casmi</groupId>
+  <artifactId>casmi-ext-bvh</artifactId>
+  <version>0.3.0</version>
+  <packaging>jar</packaging>
+  
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <repositories>
+    <repository>
+      <id>casmi</id>
+      <name>casmi</name>
+      <url>http://casmi.github.com/maven-repo/</url>
+    </repository>
+  </repositories>
+  
+  <dependencies>
+    <dependency>
+      <groupId>casmi</groupId>
+      <artifactId>casmi</artifactId>
+      <version>0.3.0</version>
+    </dependency>
+  </dependencies>
+  
+  <build>
+	<plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+		<artifactId>maven-compiler-plugin</artifactId>
+		<version>2.3.2</version>
+		<configuration>
+			<source>1.6</source>
+			<target>1.6</target>
+		</configuration>
+	  </plugin>
+	</plugins>
+  </build>
+  <name>casmi-ext-bvh</name>
+  <url>https://github.com/casmi/casmi-ext-bvh</url>
+  <description>casmi extension for bvh</description>
+</project>
