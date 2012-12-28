@@ -4,6 +4,12 @@
     <archetype>
       <groupId>casmi</groupId>
       <artifactId>casmi-archetype</artifactId>
+      <version>0.3.1</version>
+      <repository>http://casmi.github.com/maven-repo</repository>
+    </archetype>
+    <archetype>
+      <groupId>casmi</groupId>
+      <artifactId>casmi-archetype</artifactId>
       <version>0.3.0</version>
       <repository>http://casmi.github.com/maven-repo</repository>
     </archetype>
