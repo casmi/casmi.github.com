@@ -69,6 +69,11 @@ ul.featuresList li{
 .center dl dd pre code{
 	color: #000;
 }
+
+.center pre{
+	overflow: auto;
+}
+
 ul.libpath {
     padding-bottom: 0px;
 }
