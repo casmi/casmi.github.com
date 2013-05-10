@@ -1,6 +1,6 @@
-assets
 index.html
 download.html
-gallery
+gallery/*.html
 sitemap.xml
 sitemap.xml.gz
+/assets
