@@ -1,0 +1,21 @@
+{
+    "papery": {
+        "themes": ".themes",
+        "files": ".files",
+        "output": "."
+    },
+    "author": "Xcoo, Inc.",
+    "title": "casmi",
+    "url": "http://casmi.github.io",
+    "email": "project-casmi@xcoo.jp",
+    "keywords": "casmi, visualization, 2D visualization, 3D visualization, Java",
+    "description": "casmi is a 2D/3D visualization library for Java",
+    "theme": "default",
+    "pages": [
+        {
+            "file": ".pages/*.md",
+            "template": "page.tmpl",
+            "path": "/"
+        }
+    ]
+}

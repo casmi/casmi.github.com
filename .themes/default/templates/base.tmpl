@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=1024" />
+	<meta name="format-detection" content="telephone=no" />
+
+    <title>{{ title }}</title>
+
+    <meta name="keywords" content="{{ keywords }}" />
+    <meta name="description" content="{{ description }}" />
+
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+	<link rel="stylesheet" href="/assets/css/default.css" type="text/css" />
+	<link rel="stylesheet" href="/assets/css/about.css" type="text/css" />
+
+    <meta property="og:title" content="casmi - 2D/3D visualization library for Java" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://casmi.github.com/" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image" content="http://casmi.github.com/img/icon_og_casmi.jpg" />
+    <meta property="og:site_name" content="casmi" />
+    <meta property="og:description" content="casmi is a 2D/3D visualization library for Java" />
+
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-29139014-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+  </head>
+  <body>
+
+    <div id="wrapper">
+
+      {% include "header.tmpl" %}
+
+      <div class="clear"></div>
+
+      <div id="main">
+        <div id="side">
+          {% include "navigation.tmpl" %}
+        </div>
+        <div id="center">
+          {% block content %}{% endblock %}
+        </div>
+
+        <div class="clear"></div>
+  	  </div>
+
+      {% include "footer.tmpl" %}
+
+    </div>
+
+    <script type="text/javascript">
+      var imgPath = "/assets/img";
+    </script>
+    <script type="text/javascript" src="/assets/js/preload.js"></script>
+  </body>
+</html>

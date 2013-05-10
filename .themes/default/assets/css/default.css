@@ -1,0 +1,217 @@
+@charset "utf-8";
+
+*{
+    text-decoration: none;
+    margin: 0px;
+    font-family: 'Lucida Grande', 'Trebuchet MS', 'Bitstream Vera Sans', Verdana, Helvetica, sans-serif;
+    font-size: 12px;
+    letter-spacing: 0;
+    color: #ffffff;
+}
+
+ol{
+    padding: 0;
+}
+
+ul{
+    padding: 0;
+    list-style: none;
+}
+
+a img{
+    border-style:none;
+}
+
+br {
+    letter-spacing: 0;
+}
+
+.clear{
+    clear: both;
+}
+
+a:hover{
+    color: #0072BA;
+}
+
+/*header*/
+body {
+    width : 100%;
+    margin : 0px;
+    background-color: #000;
+    overflow: scroll;
+}
+
+#wrapper{
+    width: 920px;
+    margin: 0 auto;
+}
+
+#header{
+}
+
+#header img{
+    padding: 30px 0 20px 0;
+    height: 30px;
+    float: left;
+}
+
+#header ul{
+    padding-top: 43px;
+    float: right;
+}
+
+#header ul li{
+    float: left;
+    padding-left: 30px;
+}
+
+#header ul li   a{
+    padding-top: 5px;
+    font-size: 18px;
+}
+
+#header ul li   a.selected{
+    border-top: 3px solid #0072BA;
+}
+
+#header ul li   a:hover{
+    color: #ffffff;
+    border-top: 3px solid #0072BA;
+}
+
+.bLine{
+    width: 920px;
+    height: 6px;
+    background-image: url("../img/bLine.jpg");
+    background-repeat: no-repeat;
+}
+
+.bLineSide{
+    margin: 15px 0;
+    width: 155px;
+    height: 3px;
+    background-color: #0072BA;
+}
+
+/*main*/
+#main{
+    padding-top: 30px;
+    min-height: 700px;
+}
+
+/*side*/
+#side{
+    float: left;
+    width: 165px;
+    padding: 0 15px 0 0;
+}
+
+#side span{
+    padding: 15px 0 5px 0;
+    font-size: 18px;
+    display: block;
+}
+
+#side p{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#side p a{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#side ul{
+    padding: 10px 0 0 8px;
+}
+
+#side ul li{
+    padding-bottom: 0.5em;
+}
+
+
+.topSpace{
+    margin-top: 55px;
+}
+
+/*tw*/
+#btn_tw_casmi{
+    padding-top: 20px;
+}
+
+#btn_tw_casmi a{
+    display: block;
+    width: 150px;
+    height: 30px;
+    background-image: url("../img/btn_tw.png");
+}
+
+#btn_tw_casmi a:hover{
+    background-image: url("../img/btn_tw_h.png");
+}
+
+/*gh*/
+#btn_gh_casmi{
+    padding-top: 20px;
+}
+
+#btn_gh_casmi a{
+    display: block;
+    width: 150px;
+    height: 30px;
+    background-image: url("../img/btn_gh.png");
+}
+
+#btn_gh_casmi a:hover{
+    background-image: url("../img/btn_gh_h.png");
+}
+
+/*center*/
+#center{
+    width: 740px;
+    float: left;
+}
+
+#center h1{
+    font-size: 22px;
+    font-weight: normal;
+    padding-bottom: 23px;
+    color: #A0A0A0;
+}
+
+#center h2{
+    font-size: 20px;
+    font-weight: normal;
+    padding-bottom: 15px;
+}
+
+#center h3{
+    font-size: 16px;
+    font-weight: normal;
+    padding-bottom: 15px;
+    padding-left: 20px;
+}
+
+/*footer*/
+#footer{
+    padding-top: 30px;
+}
+
+.copyright{
+    padding: 5px 0;
+}
+
+.copyright p img{
+    padding-right: 3px;
+}
+
+.copyright span{
+    padding-top: 15px;
+    font-size: 10px;
+    width: 280px;
+    color: #545353;
+    display: block;
+    margin: 0 auto;
+}
