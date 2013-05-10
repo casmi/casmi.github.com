@@ -1,0 +1,59 @@
+{
+    "title": "casmi",
+    "slug": "index",
+    "date": "2013/05/10 12:00:00",
+    "navigation": [
+        {
+            "name": "Overview",
+            "slug": "overview"
+        },
+        {
+            "name": "Features",
+            "slug": "features",
+            "list": [
+                {
+                    "name": "Open and Free",
+                    "slug": "feature1"
+                },
+                {
+                    "name": "Java based using OpenGL",
+                    "slug": "feature2"
+                },
+                {
+                    "name": "Cross platform",
+                    "slug": "feature3"
+                },
+                {
+                    "name": "Simple and Intuitive",
+                    "slug": "feature4"
+                },
+                {
+                    "name": "Suitable for Information Visualization",
+                    "slug": "feature5"
+                }
+            ]
+        },
+        {
+            "name": "News",
+            "slug": "news"
+        },
+        {
+            "name": "Getting Started",
+            "slug": "start",
+            "list": [
+                {
+                    "name": "1. Setup casmi",
+                    "slug": "start1"
+                },
+                {
+                    "name": "2. Create project",
+                    "slug": "start2"
+                }
+            ]
+        },
+        {
+            "name": "FAQ",
+            "slug": "faq"
+        }
+    ]
+}

@@ -47,13 +47,7 @@
       <div class="clear"></div>
 
       <div id="main">
-        <div id="side">
-          {% include "navigation.tmpl" %}
-        </div>
-        <div id="center">
-          {% block content %}{% endblock %}
-        </div>
-
+        {% block content %}{% endblock %}
         <div class="clear"></div>
   	  </div>
 

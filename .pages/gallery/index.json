@@ -1,0 +1,27 @@
+{
+    "title": "casmi : Gallery",
+    "slug": "index",
+    "date": "2013/05/10 12:00:00",
+    "project": [
+        {
+            "name": "cytoband view",
+            "slug": "cytobandview",
+            "img": "cytobandview_thumbnail.jpg"
+        },
+        {
+            "name": "gene view",
+            "slug": "geneview",
+            "img": "geneview_thumbnail.jpg"
+        },
+        {
+            "name": "nuclear plants map",
+            "slug": "nuclearplantsmap",
+            "img": "nuclearplantsmap_thumbnail.jpg"
+        },
+        {
+            "name": "vistweet",
+            "slug": "vistweet",
+            "img": "vistweet_thumbnail.jpg"
+        }
+    ]
+}

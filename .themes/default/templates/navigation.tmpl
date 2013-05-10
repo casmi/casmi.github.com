@@ -1,29 +1,19 @@
-<p><a href="#overview">Overview</a></p>
-
-<p><a href="#features">Features</a></p>
-
-<ul class="featuresList">
-  <li><a href="#one">Open and Free</a></li>
-  <li><a href="#two">Java based using OpenGL</a></li>
-  <li><a href="#three">Cross platform</a></li>
-  <li><a href="#four">Simple and Intuitive</a></li>
-  <li><a href="#five">Suitable for Information Visualization</a></li>
-</ul>
-
-<p><a href="#news">News</a></p>
-
-<p><a href="#get">Getting Started</a></p>
-<ul>
-  <li><a href="#b">1. Setup casmi</a></li>
-  <li><a href="#c">2. Create project</a></li>
-</ul>
-
-<p><a href="#faq">FAQ</a></p>
+{% for n in navigation %}
+  <p><a href="#{{ n.slug }}">{{ n.name }}</a></p>
+  {% if n.list %}
+    <ul>
+      {% for l in n.list %}
+      <li><a href="#{{ l.slug }}">{{ l.name }}</a></li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+{% endfor %}
 
 <p id="btn_tw_casmi">
   <a href="https://twitter.com/casmi_project" target="_blank">
   </a>
 </p>
+
 <p id="btn_gh_casmi">
   <a href="https://github.com/casmi/" target="_blank">
   </a>
