@@ -3,9 +3,33 @@
     <img src="/assets/img/logo.png" alt="casmi" />
   </a>
   <ul>
-    <li><a class="selected" href="/">About</a></li>
-    <li><a href="/apidocs/casmi-0.3.2/">Document</a></li>
-    <li><a href="/download.html">Download</a></li>
-    <li><a href="/gallery/">Gallery</a></li>
+    <li>
+      {% if menu == 0 %}
+        <span class="selected">About</span>
+      {% else %}
+        <a href="/">About</a>
+      {% endif %}
+    </li>
+    <li>
+      {% if menu == 1 %}
+        <span class="selected">Document</span>
+      {% else %}
+        <a href="/apidocs/casmi-0.3.2/">Document</a>
+      {% endif %}
+    </li>
+    <li>
+      {% if menu == 2 %}
+        <span class="selected">Download</span>
+      {% else %}
+        <a href="/download.html">Download</a>
+      {% endif %}
+    </li>
+    <li>
+      {% if menu == 3 %}
+        <span class="selected">Gallery</span>
+      {% else %}
+        <a href="/gallery/">Gallery</a>
+      {% endif %}
+    </li>
   </ul>
 </div>
