@@ -209,7 +209,7 @@ body {
 
 #center pre{
   margin: 10px 38px;
-  padding: 10px;
+  padding: 15px 20px;
   background-color: #ddd;
   border-bottom: 1px solid #333;
   border-radius: 5px;
@@ -227,6 +227,15 @@ body {
 #footer{
   overflow: hidden;
   padding-top: 30px;
+}
+
+#footer:before{
+    content: "";
+    display: block;
+    width: 920px;
+    height: 6px;
+    background-image: url("../img/bLine.jpg");
+    background-repeat: no-repeat;
 }
 
 .copyright{
