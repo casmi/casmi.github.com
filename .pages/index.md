@@ -80,7 +80,7 @@ You can use maven archetype for casmi project. Archetype catalog is [http://casm
 
 **Quickstart project**
 
-    Also you can download Quickstart project template from http://casmi.github.io/download/
+Also you can download Quickstart project template from [download](download.html) page.
 
 ## FAQ
 
