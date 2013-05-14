@@ -1,5 +1,7 @@
 {% for n in navigation %}
+<div>
   <p><a href="#{{ n.slug }}">{{ n.name }}</a></p>
+</div>
   {% if n.list %}
     <ul>
       {% for l in n.list %}
