@@ -193,9 +193,10 @@ body {
 #center ol{
   color: #A9A7A7;
   padding: 10px 38px;
-  li{
+}
+
+#center ol li{
     list-style: disc;
-    }
 }
 
 #center ul{
@@ -214,6 +215,8 @@ body {
   border-radius: 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
+
+  overflow: scroll;
 }
 
 #center pre code{
