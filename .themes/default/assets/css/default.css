@@ -253,6 +253,10 @@ h1{
   border: 2px solid #fff;
 }
 
+.contents img{
+  width: 920px;
+}
+
 /*footer*/
 #footer{
   overflow: hidden;
