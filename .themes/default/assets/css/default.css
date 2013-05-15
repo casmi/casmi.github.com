@@ -84,9 +84,9 @@ body {
 
 /*side*/
 #side{
-  position: fixed;
-  width: 165px;
-  padding: 0;
+    float: left;
+    width: 165px;
+    padding: 0;
 }
 
 #side div:before{
