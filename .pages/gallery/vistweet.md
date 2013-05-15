@@ -11,7 +11,7 @@ You can change the scale by using plus/minus buttons at the upper right.
 
 ## Git Repository
 
-git://github.com/casmi/vistweet.git
+https://github.com/casmi/vistweet.git
 
 ## Inside the Program
 

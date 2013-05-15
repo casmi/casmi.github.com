@@ -2,18 +2,21 @@
 
 ## Downloads
 
-### casmi
-
-[http://casmi.github.com/dat/casmi-0.3.2.jar](http://casmi.github.com/dat/casmi-0.3.2.jar)
-
-### Javadoc
-
-[http://casmi.github.com/dat/casmi-0.3.2-javadoc.jar](http://casmi.github.com/dat/casmi-0.3.2-javadoc.jar)
-
 ### Quickstart Project
 
-[zip](https://github.com/casmi/casmi-quickstart/zipball/master)
+ - [casmi-quickstart.tar.gz](https://github.com/casmi/casmi-quickstart/tarball/master)
+ - [casmi-quickstart.zip](https://github.com/casmi/casmi-quickstart/zipball/master)
 
-[tar.gz](https://github.com/casmi/casmi-quickstart/tarball/master)
+This quick start project is also available from [https://github.com/casmi/casmi-quickstart](https://github.com/casmi/casmi-quickstart)
 
-Also git repository is available: [https://github.com/casmi/casmi-quickstart](https://github.com/casmi/casmi-quickstart)
+### jar
+
+ - [casmi-0.3.2.jar (Latest)](/dat/casmi-0.3.2.jar)
+ - [casmi-0.3.1.jar](/dat/casmi-0.3.1.jar)
+ - [casmi-0.3.0.jar](/dat/casmi-0.3.0.jar)
+
+### Javadoc jar
+
+ - [casmi-0.3.2-javadoc.jar (Latest)](/dat/casmi-0.3.2-javadoc.jar)
+ - [casmi-0.3.1-javadoc.jar](/dat/casmi-0.3.1-javadoc.jar)
+ - [casmi-0.3.0-javadoc.jar](/dat/casmi-0.3.0-javadoc.jar)

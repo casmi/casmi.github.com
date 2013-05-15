@@ -6,7 +6,7 @@
 
 ## Git Repository
 
-git://github.com/casmi/nuclear-plant-map.git
+https://github.com/casmi/nuclear-plant-map.git
 
 ## Inside of Program
 

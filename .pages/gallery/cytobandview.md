@@ -6,7 +6,7 @@
 
 ## Git Repository
 
-git://github.com/casmi/cytoband-view.git
+https://github.com/casmi/cytoband-view.git
 
 ## Inside of Program
 

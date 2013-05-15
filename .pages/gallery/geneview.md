@@ -10,7 +10,7 @@ This viewer shows the exon-intron structures and you can browse data with your m
 
 ## Git Repository
 
-git://github.com/casmi/gene-view.git
+https://github.com/casmi/gene-view.git
 
 ## Inside of Program
 

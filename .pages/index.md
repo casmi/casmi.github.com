@@ -2,13 +2,16 @@
 
 ## Overview
 
-casmi is a 2D/3D visualization library for Java. It can support programmers with simple and intuitive interfaces for implementation. It can work on cross platform (GNU/Linux, Mac OS X, and Windows). casmi is suitable for visualization, because it is originally designed for information visualization, especially with huge data sets.
+casmi is a 2D/3D visualization library for Java.
+It can support programmers with simple and intuitive interfaces for implementation.
+It can work on cross platform.
+casmi is suitable for visualization, because it is originally designed for information visualization, especially with huge data sets.
 
 ## Getting Started
 
 ### 1. Setup casmi
 
-**Using maven (we recommend to use maven)**
+**Using [Apache Maven](http://maven.apache.org/) (we recommend to use maven)**
 
 Add following settings to your pom.xml.
 
@@ -18,7 +21,7 @@ Add following settings to your pom.xml.
         <version>0.3.2</version>
     </dependency>
 
-All dependent libraries will be downloaded automatically if using maven.
+All dependent libraries will be downloaded automatically.
 
 **Manual setup**
 
@@ -34,7 +37,7 @@ You can use maven archetype for casmi project. Archetype catalog is [http://casm
 
 **Quickstart project**
 
-Also you can download Quickstart project template from [git repository](https://github.com/casmi/casmi-quickstart) or [download](download.html) page.
+Also you can download Quickstart project template from [download](download.html) page or [git repository](https://github.com/casmi/casmi-quickstart).
 
 ## Features
 
@@ -66,14 +69,10 @@ casmi is designed to support programmers and developers to implement visualizati
 
 casmi is designed for information visualization, especially with huge data sets. It has methods to draw OpenGL graphics which can be used for visualization. casmi has a function to support database IO and file IO, by combining these functions, you can develop systems for visualization quite easily. It will has a fuction to generate graphs. It will add simulation fuctions, for example: physical simulation.
 
-## Releases
+## Recent Releases
 
  - Apr. 5th, 2013: casmi version 0.3.2 is published on Maven Central Repository.
  - Mat. 26th, 2013: casmi version 0.3.2 is released.
  - Dec. 28th, 2012: casmi version 0.3.1 is released.
  - Nov. 9th, 2012: casmi version 0.3.0 is released.
  - Jul. 30th, 2012: casmi version 0.2.0 is released.
- - Jun. 5th, 2012: casmi version 0.1.3-SNAPSHOT is released.
- - May 29th, 2012: casmi version 0.1.2-SNAPSHOT is released.
- - March 30th, 2012: casmi version 0.1.1-SNAPSHOT is released.
- - February 4th, 2012: casmi version 0.1.0-SNAPSHOT is released.
