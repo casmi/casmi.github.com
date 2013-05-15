@@ -12,7 +12,6 @@
     padding: 0;
 }
 
-/*header*/
 body {
     width : 100%;
     margin : 0px;
@@ -25,10 +24,12 @@ body {
 }
 
 #wrapper{
+  padding: 0 20px;
     width: 920px;
     margin: 0 auto;
 }
 
+/*header*/
 #header{
   overflow: hidden;
 }
@@ -40,8 +41,8 @@ body {
 }
 
 #header ul{
-    padding-top: 43px;
-    float: right;
+    padding: 43px 0 0 20px;
+    float: left;
 }
 
 #header ul li{
@@ -68,24 +69,24 @@ body {
 /*main*/
 #main{
   overflow: hidden;
-    min-height: 700px;
+  min-height: 700px;
 }
 
 #main:before{
-    padding-top: 30px;
-    content: "";
-    display: block;
-    width: 920px;
-    height: 6px;
-    background-image: url("../img/bLine.jpg");
-    background-repeat: no-repeat;
+  padding-top: 30px;
+  content: "";
+  display: block;
+  width: 920px;
+  height: 6px;
+  background-image: url("../img/bLine.jpg");
+  background-repeat: no-repeat;
 }
 
 /*side*/
 #side{
-    float: left;
-    width: 165px;
-    padding: 40px 15px 0 0;
+  position: fixed;
+  width: 165px;
+  padding: 0;
 }
 
 #side div:before{
@@ -155,8 +156,9 @@ body {
 
 /*center*/
 #main #center{
-    width: 740px;
-    float: left;
+  padding-left: 20px;
+    width: 720px;
+    float: right;
 }
 
 #center p strong{
@@ -193,7 +195,7 @@ h1{
 }
 
 #center ol li, #full ol li{
-  list-style: disc;
+  list-style: decimal;
   padding:5px 0;
 }
 
@@ -207,6 +209,7 @@ h1{
 
 #center ul li, #full ul li{
   padding:5px 0;
+  list-style: disc;
 }
 
 #center pre{
