@@ -1,0 +1,35 @@
+<div id="header">
+  <a href="/">
+    <img src="/assets/img/logo.png" alt="casmi" />
+  </a>
+  <ul>
+    <li>
+      {% if menu == 0 %}
+        <a href="/" class="selected">About</a>
+      {% else %}
+        <a href="/">About</a>
+      {% endif %}
+    </li>
+    <li>
+      {% if menu == 1 %}
+        <a href="/docs.html" class="selected">Docs</a>
+      {% else %}
+        <a href="/docs.html">Docs</a>
+      {% endif %}
+    </li>
+    <li>
+      {% if menu == 2 %}
+        <a href="/download.html" class="selected">Download</a>
+      {% else %}
+        <a href="/download.html">Download</a>
+      {% endif %}
+    </li>
+    <li>
+      {% if menu == 3 %}
+        <a href="/gallery/" class="selected">Gallery</a>
+      {% else %}
+        <a href="/gallery/">Gallery</a>
+      {% endif %}
+    </li>
+  </ul>
+</div>

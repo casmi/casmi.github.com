@@ -1,0 +1,15 @@
+{% extends "base.tmpl" %}
+
+{% block content %}
+  <div id="full">
+    <h1>Gallery</h1>
+    <div class="thumbnails">
+      {% for p in project %}
+        <div class="thumbnailBox">
+          <p><a class="title" href="/gallery/{{ p.slug }}.html">{{ p.name }}</a></p>
+          <a href="/gallery/{{ p.slug }}.html"><img src="/assets/img/gallery/{{ p.img }}" alt="{{ p.name }}" /></a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endblock %}

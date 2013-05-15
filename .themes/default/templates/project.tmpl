@@ -1,0 +1,15 @@
+{% extends "base.tmpl" %}
+
+{% block content %}
+  <div id="full">
+    <h1>{{ name }}</h1>
+
+    <div class="contents">
+      <img src="/assets/img/gallery/{{ slug }}.jpg"/>
+
+      <div class="contentsText">
+        {{ post.text(lang) }}
+      </div>
+    </div>
+  </div>
+{% endblock %}

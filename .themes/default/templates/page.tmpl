@@ -1,0 +1,13 @@
+{% extends "base.tmpl" %}
+
+{% block content %}
+
+  <div id="side">
+    {% include "navigation.tmpl" %}
+  </div>
+
+  <div id="center">
+    {{ post.text(lang) }}
+  </div>
+
+{% endblock %}

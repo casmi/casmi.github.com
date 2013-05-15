@@ -96,21 +96,21 @@
 <h3 id="code">Code</h3>
 
 <ol>
-<li>It automatically downloads cytoBand.txt.gz from the UCSC Human annotation site and stores to a local machine cache(CytobandLoader.java).</li>
+<li>It automatically downloads cytoBand.txt.gz from the UCSC Human annotation site and stores to a local machine cache (CytobandLoader.java).</li>
 <li>The data is read and is stored to objects (Cytoband.java).</li>
-<li>After that, the data is set to the appropriate position according to the bands (using base pairs) (CytobandView.java).</li>
+<li>After that, the data is set to the appropriate position according to the bands using base pairs (CytobandView.java).</li>
 <li>To draw the data, it uses the Rect method for each band (CytobandView.java).</li>
-<li>It also uses HitRect for testing mouse hits to objects. When the mouse is on the objects, it writes messages to the band name and draw strokes to the band(CytobandView.java).</li>
+<li>It also uses HitRect for testing mouse hits to objects. When the mouse is on the objects, it writes messages to the band name and draw strokes to the band (CytobandView.java).</li>
 </ol>
 
 <h3 id="api">API</h3>
 
 <ul>
-<li>For download via HTTP, it uses casmi.net.HTTP</li>
-<li>For parsing downloaded data, it uses casmi.parser.CSV</li>
-<li>For drawing bands, it uses casmi.element.Rect</li>
-<li>For detecting mouse hits, it uses casmi.hit.hitRect</li>
-<li>For drawing text, it uses casmi.element.Text and casmi.font.Font</li>
+<li>For download via HTTP, it uses <code>casmi.net.HTTP</code></li>
+<li>For parsing downloaded data, it uses <code>casmi.parser.CSV</code></li>
+<li>For drawing bands, it uses <code>casmi.element.Rect</code></li>
+<li>For detecting mouse hits, it uses <code>casmi.hit.hitRect</code></li>
+<li>For drawing text, it uses <code>casmi.element.Text</code> and <code>casmi.font.Font</code></li>
 </ul>
 
       </div>
