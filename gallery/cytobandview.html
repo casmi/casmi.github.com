@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=1024" />
     <meta name="format-detection" content="telephone=no" />
 
-    <title>casmi : Gallery</title>
+    <title>casmi : Gallery : cytoband view</title>
 
     <meta name="keywords" content="casmi, visualization, 2D visualization, 3D visualization, Java, Clojure" />
     <meta name="description" content="casmi is a 2D/3D visualization library for Java. It can support programmers with simple and intuitive interfaces for implementation. It can work on cross platform. casmi is suitable for visualization especially with huge data sets." />
@@ -18,7 +18,7 @@
 
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 
-    <meta property="og:title" content="casmi : Gallery" />
+    <meta property="og:title" content="casmi : Gallery : cytoband view" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://casmi.github.io/" />
     <meta property="og:locale" content="en_US" />
@@ -75,29 +75,45 @@
       <div id="main">
         
   <div id="full">
-    <h1>Gallery</h1>
-    <div class="thumbnails">
-      
-        <div class="thumbnailBox">
-          <p><a class="title" href="/gallery/cytobandview.html">cytoband view</a></p>
-          <a href="/gallery/cytobandview.html"><img src="/assets/img/gallery/cytobandview_thumbnail.jpg" alt="cytoband view" /></a>
-        </div>
-      
-        <div class="thumbnailBox">
-          <p><a class="title" href="/gallery/geneview.html">gene view</a></p>
-          <a href="/gallery/geneview.html"><img src="/assets/img/gallery/geneview_thumbnail.jpg" alt="gene view" /></a>
-        </div>
-      
-        <div class="thumbnailBox">
-          <p><a class="title" href="/gallery/nuclearplantsmap.html">nuclear plants map</a></p>
-          <a href="/gallery/nuclearplantsmap.html"><img src="/assets/img/gallery/nuclearplantsmap_thumbnail.jpg" alt="nuclear plants map" /></a>
-        </div>
-      
-        <div class="thumbnailBox">
-          <p><a class="title" href="/gallery/vistweet.html">vistweet</a></p>
-          <a href="/gallery/vistweet.html"><img src="/assets/img/gallery/vistweet_thumbnail.jpg" alt="vistweet" /></a>
-        </div>
-      
+    <h1>cytoband view</h1>
+
+    <div class="contents">
+      <img src="/assets/img/gallery/cytobandview.jpg"/>
+
+      <div class="contentsText">
+        <h2 id="abstract">Abstract</h2>
+
+<p>"cytoband view" is a viewer for the Human chromosome cytoband (Human Genome, UCSC hg.19). When you point to a band, the band name (like, Chr.8q12.1) will be shown. Colors of bands change to make a good show.</p>
+
+<p><a href="https://github.com/casmi/cytoband-view">https://github.com/casmi/cytoband-view</a></p>
+
+<h2 id="git-repository">Git Repository</h2>
+
+<p>https://github.com/casmi/cytoband-view.git</p>
+
+<h2 id="inside-of-program">Inside of Program</h2>
+
+<h3 id="code">Code</h3>
+
+<ol>
+<li>It automatically downloads cytoBand.txt.gz from the UCSC Human annotation site and stores to a local machine cache(CytobandLoader.java).</li>
+<li>The data is read and is stored to objects (Cytoband.java).</li>
+<li>After that, the data is set to the appropriate position according to the bands (using base pairs) (CytobandView.java).</li>
+<li>To draw the data, it uses the Rect method for each band (CytobandView.java).</li>
+<li>It also uses HitRect for testing mouse hits to objects. When the mouse is on the objects, it writes messages to the band name and draw strokes to the band(CytobandView.java).</li>
+</ol>
+
+<h3 id="api">API</h3>
+
+<ul>
+<li>For download via HTTP, it uses casmi.net.HTTP</li>
+<li>For parsing downloaded data, it uses casmi.parser.CSV</li>
+<li>For drawing bands, it uses casmi.element.Rect</li>
+<li>For detecting mouse hits, it uses casmi.hit.hitRect</li>
+<li>For drawing text, it uses casmi.element.Text and casmi.font.Font</li>
+</ul>
+
+      </div>
     </div>
   </div>
 

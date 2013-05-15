@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=1024" />
     <meta name="format-detection" content="telephone=no" />
 
-    <title>casmi : Gallery</title>
+    <title>casmi : Gallery : vistweet</title>
 
     <meta name="keywords" content="casmi, visualization, 2D visualization, 3D visualization, Java, Clojure" />
     <meta name="description" content="casmi is a 2D/3D visualization library for Java. It can support programmers with simple and intuitive interfaces for implementation. It can work on cross platform. casmi is suitable for visualization especially with huge data sets." />
@@ -18,7 +18,7 @@
 
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 
-    <meta property="og:title" content="casmi : Gallery" />
+    <meta property="og:title" content="casmi : Gallery : vistweet" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://casmi.github.io/" />
     <meta property="og:locale" content="en_US" />
@@ -75,29 +75,54 @@
       <div id="main">
         
   <div id="full">
-    <h1>Gallery</h1>
-    <div class="thumbnails">
-      
-        <div class="thumbnailBox">
-          <p><a class="title" href="/gallery/cytobandview.html">cytoband view</a></p>
-          <a href="/gallery/cytobandview.html"><img src="/assets/img/gallery/cytobandview_thumbnail.jpg" alt="cytoband view" /></a>
-        </div>
-      
-        <div class="thumbnailBox">
-          <p><a class="title" href="/gallery/geneview.html">gene view</a></p>
-          <a href="/gallery/geneview.html"><img src="/assets/img/gallery/geneview_thumbnail.jpg" alt="gene view" /></a>
-        </div>
-      
-        <div class="thumbnailBox">
-          <p><a class="title" href="/gallery/nuclearplantsmap.html">nuclear plants map</a></p>
-          <a href="/gallery/nuclearplantsmap.html"><img src="/assets/img/gallery/nuclearplantsmap_thumbnail.jpg" alt="nuclear plants map" /></a>
-        </div>
-      
-        <div class="thumbnailBox">
-          <p><a class="title" href="/gallery/vistweet.html">vistweet</a></p>
-          <a href="/gallery/vistweet.html"><img src="/assets/img/gallery/vistweet_thumbnail.jpg" alt="vistweet" /></a>
-        </div>
-      
+    <h1>vistweet</h1>
+
+    <div class="contents">
+      <img src="/assets/img/gallery/vistweet.jpg"/>
+
+      <div class="contentsText">
+        <h2 id="abstract">Abstract</h2>
+
+<p>" vistweet " is a application to visualize relations among tweets on Twitter.
+First, you have to authorize Vital Atlas on Twitter and input the PIN code.
+vistsweet reads and analyzes recent tweets when you click the reload button at the upper right (or every 5 minutes).
+When you click the timeline at the left, a cluster consisting of your tweets and relational tweets (reply/RT) will be shown.
+A red line and icon show "reply," the green shows " official retweet (RT), " and the blue shows "unofficial retweet (QT: quote tweet). "
+You can change the scale by using plus/minus buttons at the upper right.</p>
+
+<p><a href="https://github.com/casmi/vistweet">https://github.com/casmi/vistweet</a></p>
+
+<h2 id="git-repository">Git Repository</h2>
+
+<p>https://github.com/casmi/vistweet.git</p>
+
+<h2 id="inside-the-program">Inside the Program</h2>
+
+<h3 id="code">Code</h3>
+
+<ol>
+<li>vistweet reads a timeline of Twitter using the Twitter API every 5 minutes (Request.java, Twitter.java).</li>
+<li>It parse downloads JSON data and stores to JSON objects (JsonStatus.java, JsonUser.java).</li>
+<li>Then, it maps tweets on O/R mapping, and insert to a SQLite database (UserTimeline/Mention/Retweet.java).</li>
+<li>After that, it analyzes relations of tweets (reply, RT, QT), and generates a cluster (RootCluster/Cluster.java).</li>
+<li>It draws a timeline that represents a source tweet and user icons of relative tweets at left in the window.</li>
+<li>When you click a tweet in the timeline, it visualizes relations of tweets at the right space in the window.</li>
+</ol>
+
+<h3 id="api">API</h3>
+
+<ul>
+<li>For Twitter authentication, it uses casmi.extension.net.OAuth</li>
+<li>For reading tweets via Twitter API, it uses casmi.net.HTTP</li>
+<li>For parsing downloaded data, it uses casmi.parser.JSON</li>
+<li>For using a SQLite database, it uses casmi.sql.SQLite/Entity</li>
+<li>For regular requests, it uses casmi.util.Cron</li>
+<li>For drawing a timeline, it uses casmi.graphics.element.Rect/TextBox/Texture</li>
+<li>For drawing a relation of tweets, it uses casmi.element.Line/Text/Texture</li>
+<li>For grouping each components, it uses casmi.graphics.group.Group</li>
+</ul>
+
+      </div>
     </div>
   </div>
 

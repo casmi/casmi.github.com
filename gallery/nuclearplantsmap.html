@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=1024" />
     <meta name="format-detection" content="telephone=no" />
 
-    <title>casmi : Gallery</title>
+    <title>casmi : Gallery : nuclear plants map</title>
 
     <meta name="keywords" content="casmi, visualization, 2D visualization, 3D visualization, Java, Clojure" />
     <meta name="description" content="casmi is a 2D/3D visualization library for Java. It can support programmers with simple and intuitive interfaces for implementation. It can work on cross platform. casmi is suitable for visualization especially with huge data sets." />
@@ -18,7 +18,7 @@
 
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 
-    <meta property="og:title" content="casmi : Gallery" />
+    <meta property="og:title" content="casmi : Gallery : nuclear plants map" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://casmi.github.io/" />
     <meta property="og:locale" content="en_US" />
@@ -75,29 +75,45 @@
       <div id="main">
         
   <div id="full">
-    <h1>Gallery</h1>
-    <div class="thumbnails">
-      
-        <div class="thumbnailBox">
-          <p><a class="title" href="/gallery/cytobandview.html">cytoband view</a></p>
-          <a href="/gallery/cytobandview.html"><img src="/assets/img/gallery/cytobandview_thumbnail.jpg" alt="cytoband view" /></a>
-        </div>
-      
-        <div class="thumbnailBox">
-          <p><a class="title" href="/gallery/geneview.html">gene view</a></p>
-          <a href="/gallery/geneview.html"><img src="/assets/img/gallery/geneview_thumbnail.jpg" alt="gene view" /></a>
-        </div>
-      
-        <div class="thumbnailBox">
-          <p><a class="title" href="/gallery/nuclearplantsmap.html">nuclear plants map</a></p>
-          <a href="/gallery/nuclearplantsmap.html"><img src="/assets/img/gallery/nuclearplantsmap_thumbnail.jpg" alt="nuclear plants map" /></a>
-        </div>
-      
-        <div class="thumbnailBox">
-          <p><a class="title" href="/gallery/vistweet.html">vistweet</a></p>
-          <a href="/gallery/vistweet.html"><img src="/assets/img/gallery/vistweet_thumbnail.jpg" alt="vistweet" /></a>
-        </div>
-      
+    <h1>nuclear plants map</h1>
+
+    <div class="contents">
+      <img src="/assets/img/gallery/nuclearplantsmap.jpg"/>
+
+      <div class="contentsText">
+        <h2 id="abstract">Abstract</h2>
+
+<p>"Nuclear Plants Map" is a viewer for nuclear power plants on the earth. The data was downloaded from Wikipedia. It visualize nuclear power plants position and size with color and size of cones. It is easy to understand the density of nuclear power plants on the earth. When you click a cone, you can see the name of nuclear power plants. Currently, it visualize 153 plants.</p>
+
+<p><a href="https://github.com/casmi/nuclear-plant-map">https://github.com/casmi/nuclear-plant-map</a></p>
+
+<h2 id="git-repository">Git Repository</h2>
+
+<p>https://github.com/casmi/nuclear-plant-map.git</p>
+
+<h2 id="inside-of-program">Inside of Program</h2>
+
+<h3 id="code">Code</h3>
+
+<ol>
+<li>It read the list of nuclear power plants with geo-location information from the resources (NuclearPlantsMap.java).</li>
+<li>The csv data is read as objects (PowerPlantLoader.java).</li>
+<li>After that, the data is set to the appropriate position according to the geo-location. A nuclear power plant is visualized as a cone. The cone size indicates size of nuclear power plant. (NuclearPlantsMap.java).</li>
+<li>To manipulate the earth, it uses mouse drag (TrackBall.java).</li>
+<li>It also uses selection buffers to enable to picking cone (NuclearPlantsMap.java).</li>
+</ol>
+
+<h3 id="api">API</h3>
+
+<ul>
+<li>For parsing the data, it uses casmi.parser.CSV</li>
+<li>For drawing the earth, it uses casmi.element.Rect, casmi.element.Sphere.</li>
+<li>For drawing nuclear power plants, it uses casmi.graphics.element.Cone.</li>
+<li>For putting textures, it uses casmi.graphics.element.Texture</li>
+<li>For drawing text, it uses casmi.element.Text, casmi.graphics.element.Text.TextAlign and casmi.font.Font</li>
+</ul>
+
+      </div>
     </div>
   </div>
 

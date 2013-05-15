@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=1024" />
     <meta name="format-detection" content="telephone=no" />
 
-    <title>casmi : Gallery</title>
+    <title>casmi : Gallery : gene view</title>
 
     <meta name="keywords" content="casmi, visualization, 2D visualization, 3D visualization, Java, Clojure" />
     <meta name="description" content="casmi is a 2D/3D visualization library for Java. It can support programmers with simple and intuitive interfaces for implementation. It can work on cross platform. casmi is suitable for visualization especially with huge data sets." />
@@ -18,7 +18,7 @@
 
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 
-    <meta property="og:title" content="casmi : Gallery" />
+    <meta property="og:title" content="casmi : Gallery : gene view" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://casmi.github.io/" />
     <meta property="og:locale" content="en_US" />
@@ -75,29 +75,51 @@
       <div id="main">
         
   <div id="full">
-    <h1>Gallery</h1>
-    <div class="thumbnails">
-      
-        <div class="thumbnailBox">
-          <p><a class="title" href="/gallery/cytobandview.html">cytoband view</a></p>
-          <a href="/gallery/cytobandview.html"><img src="/assets/img/gallery/cytobandview_thumbnail.jpg" alt="cytoband view" /></a>
-        </div>
-      
-        <div class="thumbnailBox">
-          <p><a class="title" href="/gallery/geneview.html">gene view</a></p>
-          <a href="/gallery/geneview.html"><img src="/assets/img/gallery/geneview_thumbnail.jpg" alt="gene view" /></a>
-        </div>
-      
-        <div class="thumbnailBox">
-          <p><a class="title" href="/gallery/nuclearplantsmap.html">nuclear plants map</a></p>
-          <a href="/gallery/nuclearplantsmap.html"><img src="/assets/img/gallery/nuclearplantsmap_thumbnail.jpg" alt="nuclear plants map" /></a>
-        </div>
-      
-        <div class="thumbnailBox">
-          <p><a class="title" href="/gallery/vistweet.html">vistweet</a></p>
-          <a href="/gallery/vistweet.html"><img src="/assets/img/gallery/vistweet_thumbnail.jpg" alt="vistweet" /></a>
-        </div>
-      
+    <h1>gene view</h1>
+
+    <div class="contents">
+      <img src="/assets/img/gallery/geneview.jpg"/>
+
+      <div class="contentsText">
+        <h2 id="abstract">Abstract</h2>
+
+<p>"gene view" is a viewer for the Human genome data (Human Genome, UCSC hg.19) with accessing to the DAS (The Distributed Annotation System) server in UCSC. This gallery shows visualization for data of refGene and knowGene that can get with "type" command of the DAS protocol.</p>
+
+<p><a href="http://genome.ucsc.edu/cgi-bin/das/hg19/features?segment=1:500000,900000;type=refGene;type=knownGene;">http://genome.ucsc.edu/cgi-bin/das/hg19/features?segment=1:500000,900000;type=refGene;type=knownGene;</a></p>
+
+<p>This viewer shows the exon-intron structures and you can browse data with your mouse drag. When you drag your mouse horizontally, the shown area of genome will be moved. When you drag your mouse vertically, the zoom level of genome will be changed. When you mouse-over an object, you can see the annotation (name) of the object.</p>
+
+<p><a href="https://github.com/casmi/gene-view">https://github.com/casmi/gene-view</a></p>
+
+<h2 id="git-repository">Git Repository</h2>
+
+<p>https://github.com/casmi/gene-view.git</p>
+
+<h2 id="inside-of-program">Inside of Program</h2>
+
+<h3 id="code">Code</h3>
+
+<ol>
+<li>It automatically get the data from the UCSC Human annotation DAS server and stores to a local machine cache (GeneView.java, GeneLoader.java).</li>
+<li>The data which is XML format is read and parsed, and is stored to objects (GeneXMLParser.java, Exon.java, Gene.java).</li>
+<li>After that, the data is set to the appropriate position according to the base pairs (GeneView.java).</li>
+<li>To draw the data, it uses the Rect method for each element (GeneElement.java).</li>
+<li>It also uses Mouseover to objects (GeneElement.java). When the mouse is on the objects, it shows the annotation name (refGene name or knownGene name) (GeneView.java).</li>
+<li>It also visualize the scale (basepairs) to show which area is shown.</li>
+</ol>
+
+<h3 id="api">API</h3>
+
+<ul>
+<li>For download via HTTP, it uses casmi.net.HTTP</li>
+<li>For caching the data, it uses casmi.util.FileUtil and casmi.io.Reader</li>
+<li>For parsing downloaded XML data, it uses casmi.parser.XMLElement</li>
+<li>For drawing exons and introns, it uses casmi.element.Rect</li>
+<li>For detecting mouse hits, it uses casmi.graphics.element.Mouseover</li>
+<li>For drawing text, it uses casmi.element.Text and casmi.font.Font</li>
+</ul>
+
+      </div>
     </div>
   </div>
 
