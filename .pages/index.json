@@ -10,15 +10,15 @@
         },
         {
             "name": "Getting Started",
-            "slug": "start",
+            "slug": "getting-started",
             "list": [
                 {
                     "name": "1. Setup casmi",
-                    "slug": "start1"
+                    "slug": "1-start-casmi"
                 },
                 {
                     "name": "2. Create project",
-                    "slug": "start2"
+                    "slug": "2-create-project"
                 }
             ]
         },
@@ -28,29 +28,29 @@
             "list": [
                 {
                     "name": "Open and Free",
-                    "slug": "feature1"
+                    "slug": "open-and-free"
                 },
                 {
                     "name": "Java based using OpenGL",
-                    "slug": "feature2"
+                    "slug": "java-based-using-opengl"
                 },
                 {
                     "name": "Cross platform",
-                    "slug": "feature3"
+                    "slug": "cross-platform"
                 },
                 {
                     "name": "Simple and Intuitive",
-                    "slug": "feature4"
+                    "slug": "simple-and-intuitive"
                 },
                 {
                     "name": "Suitable for Information Visualization",
-                    "slug": "feature5"
+                    "slug": "suitable-for-information-visualization"
                 }
             ]
         },
         {
             "name": "Recent Releases",
-            "slug": "releases"
+            "slug": "recent-releases"
         }
     ]
 }
