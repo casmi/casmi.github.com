@@ -5,11 +5,11 @@
         "output": "."
     },
     "author": "Xcoo, Inc.",
-    "title": "casmi",
+    "title": "casmi - 2D/3D visualization library for Java",
     "url": "http://casmi.github.io",
     "email": "project-casmi@xcoo.jp",
-    "keywords": "casmi, visualization, 2D visualization, 3D visualization, Java",
-    "description": "casmi is a 2D/3D visualization library for Java",
+    "keywords": "casmi, visualization, 2D visualization, 3D visualization, Java, Clojure",
+    "description": "casmi is a 2D/3D visualization library for Java. It can support programmers with simple and intuitive interfaces for implementation. It can work on cross platform. casmi is suitable for visualization especially with huge data sets.",
     "theme": "default",
     "variables": {
         "version": "0.3.2"
