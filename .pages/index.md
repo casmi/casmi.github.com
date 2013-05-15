@@ -11,8 +11,9 @@ casmi is suitable for visualization, because it is originally designed for infor
 
 ### 1. Setup casmi
 
-**Using [Apache Maven](http://maven.apache.org/) (we recommend to use maven)**
+#### Using Apache Maven
 
+We recommend to use [Apache Maven](http://maven.apache.org/).
 Add following settings to your pom.xml.
 
     <dependency>
@@ -23,19 +24,19 @@ Add following settings to your pom.xml.
 
 All dependent libraries will be downloaded automatically.
 
-**Manual setup**
+#### Manual setup
 
 You can download binary jar from [download](download.html) page.
 
 ### 2. Create project
 
-**Maven Archetype**
+#### Maven Archetype
 
 You can use maven archetype for casmi project. Archetype catalog is [http://casmi.github.io/maven-repo/archetype-catalog.xml](http://casmi.github.io/maven-repo/archetype-catalog.xml)
 
     $ mvn archetype:generate -DarchetypeCatalog=http://casmi.github.io/maven-repo/archetype-catalog.xml -Dfilter=com.github.casmi.archetypes:casmi-quickstart
 
-**Quickstart project**
+#### Quickstart project
 
 Also you can download Quickstart project template from [download](download.html) page or [git repository](https://github.com/casmi/casmi-quickstart).
 

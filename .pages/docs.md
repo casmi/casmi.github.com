@@ -14,39 +14,13 @@ We are sorry. not written yet :(
 
 ## FAQ
 
-*What is casmi?*
+#### What is casmi?
 
 casmi is a Java-based library for visualization, data access, and data analysis. It is designed for programmers to write their applications easily and quickly. And it is opensource.
 
-*Why is casmi opensource software?*
+#### How can I generate executable binary for Mac OS X and Windows?
 
-Contributers want casmi to be used widely all over the world. And they hope there are many kind contributers to help casmi grow.
-
-*What kind of license does casmi have?*
-
-casmi has LGPL version 3 license for opensource version.
-
-*What I do when I want to be involved in the casmi project?*
-
-Please contact us. See [https://github.com/casmi](https://github.com/casmi)
-
-*Who had the idea of casmi?*
-
-Members of Xcoo, Inc. thought up the idea of casmi. They are developing customized visualization software, so they thought it would be convienient if they had a good library for visualization software. Thus they started development of casmi from June 2011.
-
-*What the difference between casmi and its precursors?*
-
-casmi is designed for visualization and serious applications. For visualization, there are Processing development environments and OpenFrameworks. They are our precursors. Their main targets are artists and beginning programmers. Our target is the business man and programmer.
-
-*If we want to ask someone to develop our systems using casmi, what should we do?*
-
-Please contact Xcoo, Inc. They can help you.
-
-*What is Xcoo, Inc. ?*
-
-Xcoo, Inc. is a startup company for research and development of visualization and interactive systems, located in Tokyo, Japan. They began their business on April 1st, 2011. The backgrounds of members of Xcoo, Inc include virtual reality, computer science, and design. Please visit their website. http://www.xcoo.jp/
-
-*If you want to export Mac OS X .app file, you can add following settings to pom.xml*
+If you want to export Mac OS X .app file, you can add following settings to pom.xml
 
     <plugin>
         <groupId>org.codehaus.mojo</groupId>
@@ -65,7 +39,7 @@ Xcoo, Inc. is a startup company for research and development of visualization an
         </executions>
     </plugin>
 
-*If you want to export Windows .exe file, you can add following settings to pom.xml*
+If you want to export Windows .exe file, you can add following settings to pom.xml
 
     <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -153,3 +127,38 @@ Xcoo, Inc. is a startup company for research and development of visualization an
             </execution>
         </executions>
     </plugin>
+
+#### What the difference between casmi and its precursors?
+
+casmi is designed for visualization and serious applications.
+For visualization, there are Processing development environments and OpenFrameworks.
+They are our precursors.
+Their main targets are artists and beginning programmers.
+Our target is the business man and programmer.
+
+#### What kind of license does casmi have?
+
+casmi has LGPL version 3 license for opensource version.
+
+#### Why is casmi opensource software?
+
+Contributers want casmi to be used widely all over the world. And they hope there are many kind contributers to help casmi grow.
+
+#### What I do when I want to be involved in the casmi project?
+
+Please contact us. See [https://github.com/casmi](https://github.com/casmi) for more information.
+
+#### Who had the idea of casmi?
+
+Members of Xcoo, Inc. thought up the idea of casmi.
+They are developing customized visualization software, so they thought it would be convienient if they had a good library for visualization software.
+Thus they started development of casmi from June 2011.
+
+#### If we want to ask someone to develop our systems using casmi, what should we do?
+
+Please contact Xcoo, Inc. They can help you.
+
+#### What is Xcoo, Inc. ?
+
+Xcoo, Inc. is a startup company for research and development of visualization and interactive systems, located in Tokyo, Japan. They began their business on April 1st, 2011. The backgrounds of members of Xcoo, Inc include virtual reality, computer science, and design.
+Please visit their website [http://www.xcoo.jp/](http://www.xcoo.jp).

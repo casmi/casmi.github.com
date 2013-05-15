@@ -6,7 +6,7 @@
     <div class="thumbnails">
       {% for p in project %}
         <div class="thumbnailBox">
-          <p><a href="/gallery/{{ p.slug }}.html">{{ p.name }}</a></p>
+          <p><a class="title" href="/gallery/{{ p.slug }}.html">{{ p.name }}</a></p>
           <a href="/gallery/{{ p.slug }}.html"><img src="/assets/img/gallery/{{ p.img }}" alt="{{ p.name }}" /></a>
         </div>
       {% endfor %}

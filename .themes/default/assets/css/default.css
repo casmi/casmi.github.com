@@ -20,18 +20,18 @@ body {
 }
 
 #main a:hover{
-  color: #0072BA;
+    color: #0072BA;
 }
 
 #wrapper{
-  padding: 0 20px;
+    padding: 0 20px;
     width: 920px;
     margin: 0 auto;
 }
 
 /*header*/
 #header{
-  overflow: hidden;
+    overflow: hidden;
 }
 
 #header img{
@@ -68,18 +68,18 @@ body {
 
 /*main*/
 #main{
-  overflow: hidden;
-  min-height: 700px;
+    overflow: hidden;
+    min-height: 700px;
 }
 
 #main:before{
-  padding-top: 30px;
-  content: "";
-  display: block;
-  width: 920px;
-  height: 6px;
-  background-image: url("../img/bLine.jpg");
-  background-repeat: no-repeat;
+    padding-top: 30px;
+    content: "";
+    display: block;
+    width: 920px;
+    height: 6px;
+    background-image: url("../img/bLine.jpg");
+    background-repeat: no-repeat;
 }
 
 /*side*/
@@ -90,8 +90,8 @@ body {
 }
 
 #side div:before{
-  content: "";
-  display: block;
+    content: "";
+    display: block;
     margin: 15px 0;
     width: 155px;
     height: 3px;
@@ -156,13 +156,13 @@ body {
 
 /*center*/
 #main #center{
-  padding-left: 20px;
+    padding-left: 20px;
     width: 720px;
     float: right;
 }
 
 #center p strong{
-  display: block;
+    display: block;
 }
 
 h1{
@@ -174,101 +174,118 @@ h1{
 #center h2, #full h2{
     font-size: 20px;
     font-weight: normal;
-    padding:23px 0 15px;
+    padding:52px 0 15px;
 }
 
 #center h3, #full h3{
     font-size: 16px;
     font-weight: normal;
-    padding: 15px 0;
-    padding-left: 20px;
+    padding: 15px 0 8px 15px;
+}
+
+#center h4, #full h3{
+    font-size: 12px;
+    font-weight: normal;
+    padding: 15px 0px 5px 20px;
 }
 
 #center p, #full p{
-  color: #A9A7A7;
-  padding: 0 20px 20px 20px;
+    color: #A9A7A7;
+    padding: 0 20px 20px 20px;
 }
 
 #center a, #full a{
-  font-weight: bold;
-  text-decoration: underline;
-  color: #A9A7A7;
+    color: #5893b8;
+}
+
+#full a.title {
+    font-weight: bold;
+    color: #FFF;
 }
 
 #center ol, #full ol{
-  color: #A9A7A7;
-  padding: 10px 38px;
+    color: #A9A7A7;
+    padding: 10px 38px;
 }
 
 #center ol li, #full ol li{
-  list-style: decimal;
-  padding:5px 0;
+    list-style: decimal;
+    padding:5px 0;
 }
 
 #full ol li p{
-  padding: 0 !important;
+    padding: 0 !important;
 }
 
-#center ul, #full ul{
-  padding: 10px 30px;
+#center ul {
+    padding: 10px 30px;
 }
 
-#center ul li, #full ul li{
-  padding:5px 0;
+#center ul li {
+    padding:5px 0;
+}
+
+#full ul {
+    padding: 10px 38px;
+}
+
+#full ul li{
+    padding:5px 0;
+    list-style: disc;
 }
 
 #center pre{
-  margin: 10px 38px;
-  padding: 15px 20px;
-  background-color: #ddd;
-  border-bottom: 1px solid #333;
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
+    margin: 10px 38px;
+    padding: 15px 20px;
+    background-color: #ddd;
+    border-bottom: 1px solid #333;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
 
-  overflow: scroll;
+    overflow: scroll;
 }
 
 #center pre code{
-  color: #333;
+    color: #333;
 }
 
 /*gallery*/
 #full{
-  width: 920px;
+    width: 920px;
 }
 
 .thumbnails .thumbnailBox p{
-  padding: 0 0 10px 0 !important;
+    padding: 0 0 10px 0 !important;
 }
 
 .thumbnails{
-  padding-top: 23px;
-  overflow: hidden;
+    padding-top: 23px;
+    overflow: hidden;
 }
 
 .thumbnails .thumbnailBox{
-  padding-bottom: 50px;
-  width: 304px;
-  float: left;
+    padding-bottom: 50px;
+    width: 304px;
+    float: left;
 }
 
 .thumbnails .thumbnailBox:nth-child(2n+1){
-  margin: 0 2px;
+    margin: 0 2px;
 }
 
 .thumbnails .thumbnailBox a img{
-  border: 2px solid #fff;
+    border: 2px solid #fff;
 }
 
 .contents img{
-  width: 920px;
+    width: 920px;
 }
 
 /*footer*/
 #footer{
-  overflow: hidden;
-  padding-top: 30px;
+    overflow: hidden;
+    padding-top: 30px;
 }
 
 #footer:before{
