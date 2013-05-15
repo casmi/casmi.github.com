@@ -189,6 +189,12 @@ h1{
   padding: 0 20px 20px 20px;
 }
 
+#center a, #full a{
+  font-weight: bold;
+  text-decoration: underline;
+  color: #A9A7A7;
+}
+
 #center ol, #full ol{
   color: #A9A7A7;
   padding: 10px 38px;
@@ -204,12 +210,11 @@ h1{
 }
 
 #center ul, #full ul{
-  padding: 10px 38px;
+  padding: 10px 30px;
 }
 
 #center ul li, #full ul li{
   padding:5px 0;
-  list-style: disc;
 }
 
 #center pre{
