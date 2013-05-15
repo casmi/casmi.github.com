@@ -9,6 +9,20 @@
             "slug": "overview"
         },
         {
+            "name": "Getting Started",
+            "slug": "start",
+            "list": [
+                {
+                    "name": "1. Setup casmi",
+                    "slug": "start1"
+                },
+                {
+                    "name": "2. Create project",
+                    "slug": "start2"
+                }
+            ]
+        },
+        {
             "name": "Features",
             "slug": "features",
             "list": [
@@ -35,26 +49,8 @@
             ]
         },
         {
-            "name": "News",
-            "slug": "news"
-        },
-        {
-            "name": "Getting Started",
-            "slug": "start",
-            "list": [
-                {
-                    "name": "1. Setup casmi",
-                    "slug": "start1"
-                },
-                {
-                    "name": "2. Create project",
-                    "slug": "start2"
-                }
-            ]
-        },
-        {
-            "name": "FAQ",
-            "slug": "faq"
+            "name": "Releases",
+            "slug": "releases"
         }
     ]
 }

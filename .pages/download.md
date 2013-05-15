@@ -1,24 +1,19 @@
-# Download
+# 2D/3D visualization library for Java
 
 ## Downloads
 
-**casmi**
+### casmi
+
 [http://casmi.github.com/dat/casmi-0.3.2.jar](http://casmi.github.com/dat/casmi-0.3.2.jar)
 
-**Javadoc**
+### Javadoc
+
 [http://casmi.github.com/dat/casmi-0.3.2-javadoc.jar](http://casmi.github.com/dat/casmi-0.3.2-javadoc.jar)
 
-**Quickstart Project**
+### Quickstart Project
 
-[zip](https://github.com/casmi/casmi-quickstart/zipball/master) [tar.gz](https://github.com/casmi/casmi-quickstart/tarball/master)
-(See [https://github.com/casmi/casmi-quickstart](https://github.com/casmi/casmi-quickstart))
+[zip](https://github.com/casmi/casmi-quickstart/zipball/master)
 
-## Git Repositories
+[tar.gz](https://github.com/casmi/casmi-quickstart/tarball/master)
 
-**casmi**
-
-https://github.com/casmi/casmi.git
-
-**examples for casmi**
-
-https://github.com/casmi/casmi-examples.git
+Also git repository is available: [https://github.com/casmi/casmi-quickstart](https://github.com/casmi/casmi-quickstart)

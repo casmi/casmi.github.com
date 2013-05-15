@@ -5,28 +5,28 @@
   <ul>
     <li>
       {% if menu == 0 %}
-        <span class="selected">About</span>
+        <a href="/" class="selected">About</a>
       {% else %}
         <a href="/">About</a>
       {% endif %}
     </li>
     <li>
       {% if menu == 1 %}
-        <span class="selected">Document</span>
+        <a href="/docs.html" class="selected">Docs</a>
       {% else %}
-        <a href="/apidocs/casmi-{{ version }}/">Document</a>
+        <a href="/docs.html">Docs</a>
       {% endif %}
     </li>
     <li>
       {% if menu == 2 %}
-        <span class="selected">Download</span>
+        <a href="/download.html" class="selected">Download</a>
       {% else %}
         <a href="/download.html">Download</a>
       {% endif %}
     </li>
     <li>
       {% if menu == 3 %}
-        <span class="selected">Gallery</span>
+        <a href="/gallery/" class="selected">Gallery</a>
       {% else %}
         <a href="/gallery/">Gallery</a>
       {% endif %}

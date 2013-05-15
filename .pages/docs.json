@@ -1,0 +1,16 @@
+{
+    "title": "casmi : Docs",
+    "slug": "docs",
+    "date": "2013/05/10 12:00:00",
+    "menu": 1,
+    "navigation": [
+        {
+            "name": "Document",
+            "slug": "document"
+        },
+        {
+            "name": "FAQ",
+            "slug": "faq"
+        }
+    ]
+}

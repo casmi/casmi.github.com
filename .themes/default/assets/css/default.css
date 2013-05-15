@@ -194,7 +194,7 @@ h1{
 
 #center ol li, #full ol li{
   list-style: disc;
-  padding:5px 0;    
+  padding:5px 0;
 }
 
 #full ol li p{
@@ -227,7 +227,7 @@ h1{
 
 /*gallery*/
 #full{
-  width: 920px; 
+  width: 920px;
 }
 
 .thumbnails .thumbnailBox p{
@@ -236,7 +236,7 @@ h1{
 
 .thumbnails{
   padding-top: 23px;
-  overflow: hidden;  
+  overflow: hidden;
 }
 
 .thumbnails .thumbnailBox{
