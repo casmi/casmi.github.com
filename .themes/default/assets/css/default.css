@@ -173,6 +173,7 @@ body {
 }
 
 #top-area h1 {
+    font-family: "Titillium Web", sans-serif;
     display: block;
     position: absolute;
     top: 60px;
@@ -182,6 +183,7 @@ body {
     font-size: 26px;
     font-weight: normal;
     color: #C0C0C0;
+    letter-spacing: 2px;
 
     -webkit-touch-callout: none;
     -webkit-user-select: none;
