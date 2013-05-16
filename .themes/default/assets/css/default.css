@@ -16,7 +16,6 @@ body {
     width : 100%;
     margin : 0px;
     background-color: #000;
-    overflow: scroll;
 }
 
 #main a:hover{
@@ -243,7 +242,7 @@ h1{
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
 
-    overflow: scroll;
+    overflow: hidden;
 }
 
 #center pre code{
