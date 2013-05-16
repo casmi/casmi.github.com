@@ -30,9 +30,9 @@ You can download binary jar from [download](download.html) page.
 
 #### Maven Archetype
 
-You can use maven archetype for casmi project. Archetype catalog is [http://casmi.github.io/maven-repo/archetype-catalog.xml](http://casmi.github.io/maven-repo/archetype-catalog.xml)
+You can use maven archetype for casmi project.
 
-    mvn archetype:generate -DarchetypeCatalog=http://casmi.github.io/maven-repo/archetype-catalog.xml -Dfilter=com.github.casmi.archetypes:casmi-quickstart
+    mvn archetype:generate -Dfilter=com.github.casmi.archetypes:casmi-quickstart
 
 #### Quickstart project
 
