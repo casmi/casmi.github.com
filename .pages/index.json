@@ -5,16 +5,12 @@
     "menu": 0,
     "navigation": [
         {
-            "name": "Overview",
-            "slug": "overview"
-        },
-        {
             "name": "Getting Started",
             "slug": "getting-started",
             "list": [
                 {
                     "name": "1. Setup casmi",
-                    "slug": "1-start-casmi"
+                    "slug": "1-setup-casmi"
                 },
                 {
                     "name": "2. Create project",

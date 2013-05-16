@@ -1,7 +1,5 @@
 # 2D/3D visualization library for Java
 
-## Overview
-
 casmi is a 2D/3D visualization library for Java.
 It can support programmers with simple and intuitive interfaces for implementation.
 It can work on cross platform.
