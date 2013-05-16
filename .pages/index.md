@@ -73,7 +73,7 @@ casmi is designed for information visualization, especially with huge data sets.
 ## Recent Releases
 
  - Apr. 5th, 2013: casmi version 0.3.2 is published on Maven Central Repository.
- - Mat. 26th, 2013: casmi version 0.3.2 is released.
+ - Mar. 26th, 2013: casmi version 0.3.2 is released.
  - Dec. 28th, 2012: casmi version 0.3.1 is released.
  - Nov. 9th, 2012: casmi version 0.3.0 is released.
  - Jul. 30th, 2012: casmi version 0.2.0 is released.
