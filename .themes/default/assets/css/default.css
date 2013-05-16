@@ -153,6 +153,93 @@ body {
     background-image: url("../img/btn_gh_h.png");
 }
 
+#top-area:after{
+    position: absolute;
+    top: 350px;
+    left: 0px;
+    content: "";
+    display: block;
+    width: 920px;
+    height: 6px;
+    background-image: url("../img/bLine.jpg");
+    background-repeat: no-repeat;
+}
+
+#top-area {
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+    height: 390px;
+}
+
+#top-area h1 {
+    display: block;
+    position: absolute;
+    top: 18px;
+    left: 17px;
+    margin: 0px;
+    padding: 0px;
+    font-size: 26px;
+    font-weight: normal;
+    color: #C0C0C0;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#top-area p {
+    display: block;
+    position: absolute;
+    top: 224px;
+    left: 17px;
+    margin: 0px;
+    padding: 0px;
+
+    color: #A9A7A7;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#top-area pre {
+    color: #FFFFFF;
+    font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+    font-size: 13px;
+    display: block;
+    position: absolute;
+    top: 12px;
+    left: 500px;
+    background: none;
+    border: 1px solid #444;
+    margin: 0px;
+    padding: 20px;
+    letter-spacing: 1px;
+    overflow: hidden;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -ms-border-radius: 8px;
+}
+
+#top-area pre span {
+    color: #FFFFFF;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+}
+
+#top-area pre span.nt {
+    color: #2b96d9;
+}
+
 /*center*/
 #main #center{
     padding-left: 20px;
@@ -167,27 +254,27 @@ body {
 #center h1, #full h1 {
     font-size: 26px;
     font-weight: normal;
-    color: #C0C0C0;
+    color: #808080;
     margin-bottom: 30px;
 }
 
-#center h2:first-child, #full h2:first-child{
+#center h2:first-child, #full h2:first-child {
     padding: 12px 0 15px 0;
 }
 
-#center h2, #full h2{
+#center h2, #full h2 {
     font-size: 20px;
     font-weight: normal;
     padding: 58px 0 15px 0;
 }
 
-#center h3, #full h3{
-    font-size: 16px;
+#center h3, #full h3 {
+    font-size: 14px;
     font-weight: normal;
-    padding: 15px 0 8px 15px;
+    padding: 40px 0 8px 10px;
 }
 
-#center h4, #full h3{
+#center h4, #full h4 {
     font-size: 12px;
     font-weight: normal;
     padding: 15px 0px 5px 20px;
@@ -238,7 +325,7 @@ body {
     list-style: disc;
 }
 
-#center pre{
+#center pre, #full pre {
     margin: 10px 38px;
     padding: 15px 20px;
     background-color: #ddd;
@@ -250,7 +337,9 @@ body {
     overflow: hidden;
 }
 
-#center pre code{
+#center pre code, #full pre code{
+    font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+    line-height: 1.8em;
     color: #333;
 }
 

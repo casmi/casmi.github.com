@@ -1,4 +1,4 @@
-## Downloads
+# Downloads
 
 ### Quickstart Project
 

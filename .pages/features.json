@@ -1,0 +1,20 @@
+{
+    "title": "casmi : Features",
+    "slug": "features",
+    "date": "2013/05/10 12:00:00",
+    "menu": 1,
+    "navigation": [
+        {
+            "name": "Realtime",
+            "slug": "realtime"
+        },
+        {
+            "name": "Great Many Primitives",
+            "slug": "great-many-primitives"
+        },
+        {
+            "name": "Animation and Sequence",
+            "slug": "animation-and-sequence"
+        }
+    ]
+}

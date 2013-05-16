@@ -2,51 +2,5 @@
     "title": "casmi - 2D/3D visualization library for Java",
     "slug": "index",
     "date": "2013/05/10 12:00:00",
-    "menu": 0,
-    "navigation": [
-        {
-            "name": "Getting Started",
-            "slug": "getting-started",
-            "list": [
-                {
-                    "name": "1. Setup casmi",
-                    "slug": "1-setup-casmi"
-                },
-                {
-                    "name": "2. Create project",
-                    "slug": "2-create-project"
-                }
-            ]
-        },
-        {
-            "name": "Features",
-            "slug": "features",
-            "list": [
-                {
-                    "name": "Open and Free",
-                    "slug": "open-and-free"
-                },
-                {
-                    "name": "Java based using OpenGL",
-                    "slug": "java-based-using-opengl"
-                },
-                {
-                    "name": "Cross platform",
-                    "slug": "cross-platform"
-                },
-                {
-                    "name": "Simple and Intuitive",
-                    "slug": "simple-and-intuitive"
-                },
-                {
-                    "name": "Suitable for Information Visualization",
-                    "slug": "suitable-for-information-visualization"
-                }
-            ]
-        },
-        {
-            "name": "Recent Releases",
-            "slug": "recent-releases"
-        }
-    ]
+    "menu": 0
 }

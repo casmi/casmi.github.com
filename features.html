@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=1024" />
     <meta name="format-detection" content="telephone=no" />
 
-    <title>casmi : Gallery : gene view</title>
+    <title>casmi : Features</title>
 
     <meta name="keywords" content="casmi, visualization, 2D visualization, 3D visualization, Java, Clojure" />
     <meta name="description" content="casmi is a 2D/3D visualization library for Java. It can support programmers with simple and intuitive interfaces for implementation. It can work on cross platform. casmi is suitable for visualization especially with huge data sets." />
@@ -18,7 +18,7 @@
 
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 
-    <meta property="og:title" content="casmi : Gallery : gene view" />
+    <meta property="og:title" content="casmi : Features" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://casmi.github.io/" />
     <meta property="og:locale" content="en_US" />
@@ -57,7 +57,7 @@
     </li>
     <li>
       
-        <a href="/features.html">Features</a>
+        <a href="/features.html" class="selected">Features</a>
       
     </li>
     <li>
@@ -72,7 +72,7 @@
     </li>
     <li>
       
-        <a href="/gallery/" class="selected">Gallery</a>
+        <a href="/gallery/">Gallery</a>
       
     </li>
   </ul>
@@ -80,54 +80,48 @@
 
       <div id="main">
         
-  <div id="full">
-    <h1>gene view</h1>
 
-    <div class="contents">
-      <img src="/assets/img/gallery/geneview.jpg"/>
+  <div id="side">
+    
+<div>
+  <p><a href="#realtime">Realtime</a></p>
+</div>
+  
 
-      <div class="contentsText">
-        <h2 id="abstract">Abstract</h2>
+<div>
+  <p><a href="#great-many-primitives">Great Many Primitives</a></p>
+</div>
+  
 
-<p>"gene view" is a viewer for the Human genome data (Human Genome, UCSC hg.19) with accessing to the DAS (The Distributed Annotation System) server in UCSC. This gallery shows visualization for data of refGene and knowGene that can get with "type" command of the DAS protocol.</p>
+<div>
+  <p><a href="#animation-and-sequence">Animation and Sequence</a></p>
+</div>
+  
 
-<p><a href="http://genome.ucsc.edu/cgi-bin/das/hg19/features?segment=1:500000,900000;type=refGene;type=knownGene;">http://genome.ucsc.edu/cgi-bin/das/hg19/features?segment=1:500000,900000;type=refGene;type=knownGene;</a></p>
+  </div>
 
-<p>This viewer shows the exon-intron structures and you can browse data with your mouse drag. When you drag your mouse horizontally, the shown area of genome will be moved. When you drag your mouse vertically, the zoom level of genome will be changed. When you mouse-over an object, you can see the annotation (name) of the object.</p>
+  <div id="center">
+    <h1 id="features">Features</h1>
 
-<p><a href="https://github.com/casmi/gene-view">https://github.com/casmi/gene-view</a></p>
+<p><strong>this page is under construction</strong></p>
 
-<h2 id="git-repository">Git Repository</h2>
+<h2 id="realtime">Realtime</h2>
 
-<p>https://github.com/casmi/gene-view.git</p>
+<p>Realtime rendering based on OpenGL</p>
 
-<h2 id="inside-of-program">Inside of Program</h2>
+<h2 id="great-many-primitives">Great Many Primitives</h2>
 
-<h3 id="code">Code</h3>
+<p>Great many primitives (line, rectangle, circle, ellipse cube, sphere, torus, cone etc.)</p>
 
-<ol>
-<li>It automatically get the data from the UCSC Human annotation DAS server and stores to a local machine cache (GeneView.java, GeneLoader.java).</li>
-<li>The data which is XML format is read and parsed, and is stored to objects (GeneXMLParser.java, Exon.java, Gene.java).</li>
-<li>After that, the data is set to the appropriate position according to the base pairs (GeneView.java).</li>
-<li>To draw the data, it uses the Rect method for each element (GeneElement.java).</li>
-<li>It also uses Mouseover to objects (GeneElement.java). When the mouse is on the objects, it shows the annotation name: refGene name or knownGene name (GeneView.java).</li>
-<li>It also visualize the scale (basepairs) to show which area is shown.</li>
-</ol>
-
-<h3 id="api">API</h3>
+<h2 id="animation-and-sequence">Animation and Sequence</h2>
 
 <ul>
-<li>For download via HTTP, it uses <code>casmi.net.HTTP</code></li>
-<li>For caching the data, it uses <code>casmi.util.FileUtil</code> and <code>casmi.io.Reader</code></li>
-<li>For parsing downloaded XML data, it uses <code>casmi.parser.XMLElement</code></li>
-<li>For drawing exons and introns, it uses <code>casmi.element.Rect</code></li>
-<li>For detecting mouse hits, it uses <code>casmi.graphics.element.Mouseover</code></li>
-<li>For drawing text, it uses <code>casmi.element.Text</code> and <code>casmi.font.Font</code></li>
+<li>Tween animation</li>
+<li>Sequence of timeline</li>
 </ul>
 
-      </div>
-    </div>
   </div>
+
 
         <div class="clear"></div>
   	  </div>

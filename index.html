@@ -39,6 +39,9 @@
       })();
 
     </script>
+    
+<link href="http://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css" />
+
   </head>
   <body>
 
@@ -51,7 +54,12 @@
   <ul>
     <li>
       
-        <a href="/" class="selected">About</a>
+        <a href="/" class="selected">Overview</a>
+      
+    </li>
+    <li>
+      
+        <a href="/features.html">Features</a>
       
     </li>
     <li>
@@ -75,145 +83,49 @@
       <div id="main">
         
 
-  <div id="side">
-    
-<div>
-  <p><a href="#getting-started">Getting Started</a></p>
-</div>
-  
-    <ul>
-      
-      <li><a href="#1-setup-casmi">1. Setup casmi</a></li>
-      
-      <li><a href="#2-create-project">2. Create project</a></li>
-      
-    </ul>
-  
+    <div id="top-area">
+      <h1>2D/3D visualization library for Java</h1>
 
-<div>
-  <p><a href="#features">Features</a></p>
-</div>
-  
-    <ul>
-      
-      <li><a href="#open-and-free">Open and Free</a></li>
-      
-      <li><a href="#java-based-using-opengl">Java based using OpenGL</a></li>
-      
-      <li><a href="#cross-platform">Cross platform</a></li>
-      
-      <li><a href="#simple-and-intuitive">Simple and Intuitive</a></li>
-      
-      <li><a href="#suitable-for-information-visualization">Suitable for Information Visualization</a></li>
-      
-    </ul>
-  
+<pre><span class="nt">&lt;dependency&gt;</span>
+    <span class="nt">&lt;groupId&gt;</span>com.github.casmi<span class="nt">&lt;/groupId&gt;</span>
+    <span class="nt">&lt;artifactId&gt;</span>casmi<span class="nt">&lt;/artifactId&gt;</span>
+    <span class="nt">&lt;version&gt;</span>0.3.2<span class="nt">&lt;/version&gt;</span>
+<span class="nt">&lt;/dependency&gt;</span>
+</pre>
 
-<div>
-  <p><a href="#recent-releases">Recent Releases</a></p>
-</div>
-  
+<p>
+  casmi is a 2D/3D visualization library for Java. <br />
+  It can support programmers with simple and intuitive interfaces for implementation. <br />
+  It can work on cross platform. <br />
+  casmi is suitable for visualization, because it is originally designed for information visualization, especially with huge data sets. <br />
+</p>
+    </div>
 
+    <div id="full">
+      <h1 id="getting-started">Getting Started</h1>
 
-<div>
-  <p id="btn_tw_casmi">
-    <a href="https://twitter.com/casmi_project" target="_blank">
-    </a>
-  </p>
-  
-  <p id="btn_gh_casmi">
-    <a href="https://github.com/casmi/" target="_blank">
-    </a>
-  </p>
-</div>
-  </div>
+<h2 id="1-create-a-project">1. Create a project</h2>
 
-  <div id="center">
-    <h1 id="2d3d-visualization-library-for-java">2D/3D visualization library for Java</h1>
-
-<p>casmi is a 2D/3D visualization library for Java.
-It can support programmers with simple and intuitive interfaces for implementation.
-It can work on cross platform.
-casmi is suitable for visualization, because it is originally designed for information visualization, especially with huge data sets.</p>
-
-<h2 id="getting-started">Getting Started</h2>
-
-<h3 id="1-setup-casmi">1. Setup casmi</h3>
-
-<h4 id="using-apache-maven">Using Apache Maven</h4>
-
-<p>We recommend to use <a href="http://maven.apache.org/">Apache Maven</a>.
-Add following settings to your <code>pom.xml</code>.</p>
-
-<pre><code>&lt;dependency&gt;
-    &lt;groupId&gt;com.github.casmi&lt;/groupId&gt;
-    &lt;artifactId&gt;casmi&lt;/artifactId&gt;
-    &lt;version&gt;0.3.2&lt;/version&gt;
-&lt;/dependency&gt;
-</code></pre>
-
-<p>All dependent libraries will be downloaded automatically.</p>
-
-<h4 id="manual-setup">Manual setup</h4>
-
-<p>You can download binary jar from <a href="download.html">download</a> page.</p>
-
-<h3 id="2-create-project">2. Create project</h3>
+<p>We recommend to use <a href="http://maven.apache.org/">Apache Maven</a>.</p>
 
 <h4 id="maven-archetype">Maven Archetype</h4>
 
-<p>You can use maven archetype for casmi project.</p>
+<p>Run the following command</p>
 
 <pre><code>mvn archetype:generate -Dfilter=com.github.casmi.archetypes:casmi-quickstart
 </code></pre>
 
 <h4 id="quickstart-project">Quickstart project</h4>
 
-<p>Also you can download Quickstart project template from <a href="download.html">download</a> page or <a href="https://github.com/casmi/casmi-quickstart">git repository</a>.</p>
+<p>You can download quickstart project template from <a href="download.html">download</a> page or <a href="https://github.com/casmi/casmi-quickstart">git repository</a>.</p>
 
-<h2 id="features">Features</h2>
+<h2 id="2-run">2. Run</h2>
 
-<p>casmi has 5 big features.</p>
+<pre><code>cd path/to/your/project
+mvn exec:java -Dexec.mainClass="path.to.MainClass"
+</code></pre>
 
-<ol>
-<li>Open and Free</li>
-<li>Java based using OpenGL</li>
-<li>Cross platform</li>
-<li>Simple and Intuitive</li>
-<li>Suitable for Information Visualization</li>
-</ol>
-
-<h3 id="open-and-free">Open and Free</h3>
-
-<p>casmi is an opensource and free software under LGPL license. You are free to download and use it. You are free to download the source codes.</p>
-
-<h3 id="java-based-using-opengl">Java based using OpenGL</h3>
-
-<p>casmi takes over the features of Java and OpenGL. casmi can write in Java, which is an object oriented language. It has the function of garbage collection, so you don't have to think about memory leaks. You can use extention using JNI which enables fast calculation with native machine code instead of JVM.</p>
-
-<h3 id="cross-platform">Cross platform</h3>
-
-<p>casmi works on cross platform environments (GNU/Linux, Mac OS X and Windows). It can also has a function of binary export for app (Mac OS X) and exe (Windows). You can use any environment.</p>
-
-<h3 id="simple-and-intuitive">Simple and Intuitive</h3>
-
-<p>casmi is designed to support programmers and developers to implement visualization systems quickly and easily. casmi has several convinient functions for supporting network, database IO, and File IO. It can support HTTP for network, SQLite for database, CSV, XML, and JSON for file IO. It has support for MySQL. It will also have functions for animations and timelines which control various scenes by time.</p>
-
-<h3 id="suitable-for-information-visualization">Suitable for Information Visualization</h3>
-
-<p>casmi is designed for information visualization, especially with huge data sets. It has methods to draw OpenGL graphics which can be used for visualization. casmi has a function to support database IO and file IO, by combining these functions, you can develop systems for visualization quite easily. It will has a fuction to generate graphs. It will add simulation fuctions, for example: physical simulation.</p>
-
-<h2 id="recent-releases">Recent Releases</h2>
-
-<ul>
-<li>Apr. 5th, 2013: casmi version 0.3.2 is published on Maven Central Repository.</li>
-<li>Mar. 26th, 2013: casmi version 0.3.2 is released.</li>
-<li>Dec. 28th, 2012: casmi version 0.3.1 is released.</li>
-<li>Nov. 9th, 2012: casmi version 0.3.0 is released.</li>
-<li>Jul. 30th, 2012: casmi version 0.2.0 is released.</li>
-</ul>
-
-  </div>
+    </div>
 
 
         <div class="clear"></div>
@@ -221,7 +133,6 @@ Add following settings to your <code>pom.xml</code>.</p>
 
       <div id="footer">
   <div class="copyright">
-    <p>casmi was initiated by Xcoo, Inc.</p>
     <span>Copyright &copy; Xcoo, Inc. All rights reserved.</span>
   </div>
 </div>

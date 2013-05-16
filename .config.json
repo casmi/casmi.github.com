@@ -21,6 +21,11 @@
             "path": "/"
         },
         {
+            "file": ".pages/index.md",
+            "template": "top.tmpl",
+            "path": "/"
+        },
+        {
             "file": ".pages/gallery/*.md",
             "template": "project.tmpl",
             "path": "/gallery/"
