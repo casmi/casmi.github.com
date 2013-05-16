@@ -1,5 +1,3 @@
-# 2D/3D visualization library for Java
-
 ## Document
 
 ### Tutorial

@@ -164,16 +164,21 @@ body {
     display: block;
 }
 
-h1{
-    font-size: 22px;
+#center h1, #full h1 {
+    font-size: 26px;
     font-weight: normal;
-    color: #A0A0A0;
+    color: #C0C0C0;
+    margin-bottom: 30px;
+}
+
+#center h2:first-child, #full h2:first-child{
+    padding: 12px 0 15px 0;
 }
 
 #center h2, #full h2{
     font-size: 20px;
     font-weight: normal;
-    padding:52px 0 15px;
+    padding: 58px 0 15px 0;
 }
 
 #center h3, #full h3{
