@@ -26,7 +26,7 @@ Change to the your project directory and execute:
 
 To run, execute the following **(Required to specify the main class of your project)**
 
-    mvn exec:java -Dexec.mainClass="path.to.MainClass"
+    mvn exec:java -Dexec.mainClass="yourPackageName.App"
 
 ## 4. What's next?
 
