@@ -12,6 +12,11 @@ We are sorry. Not written yet :(
 
 ## FAQ
 
+#### Which platform doest casmi support?
+
+casmi supports GNU/Linux, Mac OS X and Microsoft Windows.
+
+
 #### How can I make a executable binary for Mac OS X and Microsoft Windows?
 
 If you want to export a Mac OS X `.app` file, add following to `pom.xml`

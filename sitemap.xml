@@ -2,17 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <url>
-        <loc>http://casmi.github.io/download.html</loc>
-        <lastmod>2013-05-17T02:43:03Z</lastmod>
-    </url>
-
-    <url>
         <loc>http://casmi.github.io/nuclearplantsmap.html</loc>
-        <lastmod>2013-05-17T01:47:00Z</lastmod>
-    </url>
-
-    <url>
-        <loc>http://casmi.github.io/cytobandview.html</loc>
         <lastmod>2013-05-17T01:47:00Z</lastmod>
     </url>
 
@@ -22,13 +12,23 @@
     </url>
 
     <url>
-        <loc>http://casmi.github.io/index.html</loc>
+        <loc>http://casmi.github.io/cytobandview.html</loc>
         <lastmod>2013-05-17T01:47:00Z</lastmod>
     </url>
 
     <url>
         <loc>http://casmi.github.io/index.html</loc>
-        <lastmod>2013-05-17T03:28:33Z</lastmod>
+        <lastmod>2013-05-17T06:10:30Z</lastmod>
+    </url>
+
+    <url>
+        <loc>http://casmi.github.io/docs.html</loc>
+        <lastmod>2013-05-17T04:27:22Z</lastmod>
+    </url>
+
+    <url>
+        <loc>http://casmi.github.io/index.html</loc>
+        <lastmod>2013-05-17T01:47:00Z</lastmod>
     </url>
 
     <url>
@@ -37,12 +37,12 @@
     </url>
 
     <url>
-        <loc>http://casmi.github.io/docs.html</loc>
-        <lastmod>2013-05-17T02:43:03Z</lastmod>
+        <loc>http://casmi.github.io/tour.html</loc>
+        <lastmod>2013-05-17T06:14:14Z</lastmod>
     </url>
 
     <url>
-        <loc>http://casmi.github.io/tour.html</loc>
+        <loc>http://casmi.github.io/download.html</loc>
         <lastmod>2013-05-17T02:43:03Z</lastmod>
     </url>
 

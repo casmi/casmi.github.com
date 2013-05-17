@@ -5,12 +5,8 @@
     "menu": 1,
     "navigation": [
         {
-            "name": "Rationale",
-            "slug": "rationale"
-        },
-        {
-            "name": "Features",
-            "slug": "features",
+            "name": "What is casmi?",
+            "slug": "what-is-casmi",
             "list": [
                 {
                     "name": "Realtime",
