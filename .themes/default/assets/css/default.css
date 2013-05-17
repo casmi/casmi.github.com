@@ -88,7 +88,16 @@ body {
     padding: 0;
 }
 
-#side div:before{
+#side div.navigation-entry:after{
+    content: "";
+    display: block;
+    margin: 15px 0;
+    width: 155px;
+    height: 3px;
+    background-color: #0072BA;
+}
+
+#side:before{
     content: "";
     display: block;
     margin: 15px 0;

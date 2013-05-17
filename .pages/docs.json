@@ -6,7 +6,17 @@
     "navigation": [
         {
             "name": "Document",
-            "slug": "document"
+            "slug": "document",
+            "list": [
+                {
+                    "name": "Tutorial",
+                    "slug": "tutorial"
+                },
+                {
+                    "name": "API Document",
+                    "slug": "api-document"
+                }
+            ]
         },
         {
             "name": "FAQ",

@@ -1,12 +1,14 @@
 {% for n in navigation %}
-<div>
-  <p><a href="#{{ n.slug }}">{{ n.name }}</a></p>
-</div>
-  {% if n.list %}
-    <ul>
-      {% for l in n.list %}
-      <li><a href="#{{ l.slug }}">{{ l.name }}</a></li>
-      {% endfor %}
-    </ul>
-  {% endif %}
+  <div class="navigation-entry">
+    <div>
+      <p><a href="#{{ n.slug }}">{{ n.name }}</a></p>
+    </div>
+    {% if n.list %}
+      <ul>
+        {% for l in n.list %}
+          <li><a href="#{{ l.slug }}">{{ l.name }}</a></li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </div>
 {% endfor %}
