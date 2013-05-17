@@ -416,12 +416,9 @@ p code, li code {
     padding: 5px 0;
 }
 
-.copyright p img{
-    padding-right: 3px;
-}
-
 .copyright span{
-    padding-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 10px;
     font-size: 10px;
     width: 280px;
     color: #545353;
