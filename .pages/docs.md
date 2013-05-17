@@ -14,7 +14,7 @@ We are sorry. Not written yet :(
 
 #### How can I make a executable binary for Mac OS X and Microsoft Windows?
 
-If you want to export a Mac OS X `.app` file, add following settings to `pom.xml`
+If you want to export a Mac OS X `.app` file, add following to `pom.xml`
 
     <plugin>
         <groupId>org.codehaus.mojo</groupId>
@@ -33,7 +33,7 @@ If you want to export a Mac OS X `.app` file, add following settings to `pom.xml
         </executions>
     </plugin>
 
-If you want to export a Microsoft Windows `.exe` file, add following settings to `pom.xml`
+If you want to export a Microsoft Windows `.exe` file, add following to `pom.xml`
 
     <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -124,15 +124,21 @@ If you want to export a Microsoft Windows `.exe` file, add following settings to
 
 #### What kind of license does casmi have?
 
-casmi has LGPL version 3 license for opensource version.
+casmi has LGPL version 3 license.
 
-#### What I do when I want to be involved in the casmi project?
+#### What I do when I want to involve in the casmi project?
 
-Please contact us. See [https://github.com/casmi](https://github.com/casmi) for more information.
+Pull requests are the best ways to involve in. Pull requests can be created in github.
+See [https://github.com/casmi/casmi/pulls](https://github.com/casmi/casmi/pulls) for more information.
+
+#### Where can I get help?
+
+Submit a question or bug report on github issue: [https://github.com/casmi/casmi/issues](https://github.com/casmi/casmi/issues).
+We can help you.
 
 #### What is Xcoo, Inc. ?
 
 Xcoo, Inc. is a startup company for research and development of visualization and interactive systems, located in Tokyo, Japan.
-They began their business on April 1st, 2011.
-The backgrounds of members of Xcoo, Inc include virtual reality, computer science and design.
-Please visit their website [http://www.xcoo.jp/](http://www.xcoo.jp).
+We began our business on April 1st, 2011.
+The backgrounds of members of Xcoo, Inc include virtual reality, human interface, computer science and design.
+Please visit our website [http://www.xcoo.jp/](http://www.xcoo.jp).
