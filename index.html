@@ -115,17 +115,29 @@
 <pre><code>mvn archetype:generate -Dfilter=com.github.casmi.archetypes:casmi-quickstart
 </code></pre>
 
+<p>Maven will prompt you for a archetype, a group id, an artifact id, a version number and package.</p>
+
 <h4 id="quickstart-project">Quickstart project</h4>
 
 <p>You can download quickstart project template from <a href="download.html">download</a> page or <a href="https://github.com/casmi/casmi-quickstart">git repository</a>.</p>
 
-<h2 id="2-run">2. Run</h2>
+<h2 id="2-build">2. Build</h2>
 
-<pre><code>cd path/to/your/project
-mvn exec:java -Dexec.mainClass="path.to.MainClass"
+<p>Change to the your project directory and execute:</p>
+
+<pre><code>mvn compile
 </code></pre>
 
-<p>For further steps, take a <a href="tour.html">tour</a>.</p>
+<h2 id="3-run">3. Run</h2>
+
+<p>To run, execute the following <strong>(Required to specify the main class of your project)</strong></p>
+
+<pre><code>mvn exec:java -Dexec.mainClass="path.to.MainClass"
+</code></pre>
+
+<h2 id="4-whats-next">4. What's next?</h2>
+
+<p>Take a <a href="tour.html">tour</a>.</p>
 
     </div>
 

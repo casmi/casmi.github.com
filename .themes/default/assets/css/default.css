@@ -337,7 +337,7 @@ body {
 }
 
 #center pre, #full pre {
-    margin: 10px 38px;
+    margin: 0px 38px 20px 38px;
     padding: 15px 20px;
     background-color: #ddd;
     border-bottom: 1px solid #333;
