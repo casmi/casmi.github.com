@@ -18,3 +18,6 @@ You can download quickstart project template from [download](download.html) page
 
     cd path/to/your/project
     mvn exec:java -Dexec.mainClass="path.to.MainClass"
+
+
+Take a [tour](tour.html) with casmi.
