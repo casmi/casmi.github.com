@@ -9,7 +9,7 @@
     "url": "http://casmi.github.io",
     "email": "project-casmi@xcoo.jp",
     "keywords": "casmi, visualization, 2D visualization, 3D visualization, Java, Clojure",
-    "description": "casmi is a visualization library for Java. casmi supports 2D/3D realtime rendering base on OpenGL. With assembling graphics primitives, you can easily design scene layouts. Smooth tween animations and scene sequencing functions add rich user interface on your application.",
+    "description": "casmi is a visualization library for Java. casmi supports 2D/3D realtime rendering based on OpenGL. With assembling graphics primitives, you can easily design scene layouts. Smooth tween animations and scene sequencing functions add rich UI/UX on your application.",
     "theme": "default",
     "variables": {
         "version": "0.3.2"
