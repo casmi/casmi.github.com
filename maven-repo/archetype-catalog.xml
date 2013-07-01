@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <archetype-catalog>
   <archetypes>
+	<archetype>
+      <groupId>com.github.casmi.archetypes</groupId>
+      <artifactId>casmi-quickstart</artifactId>
+      <version>0.4.0</version>
+    </archetype>
     <archetype>
       <groupId>com.github.casmi.archetypes</groupId>
       <artifactId>casmi-quickstart</artifactId>
