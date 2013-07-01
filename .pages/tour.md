@@ -1,6 +1,8 @@
 # Tour
 
-**this page is under construction**
+**We are sorry. Not written yet :(**
+
+To learn more about casmi, please see sample codes from [https://github.com/casmi/casmi-examples](https://github.com/casmi/casmi-examples). Enjoy!
 
 ## What is casmi?
 

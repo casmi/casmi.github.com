@@ -2,7 +2,7 @@
 
 ## Tutorial
 
-We are sorry. Not written yet :(
+**We are sorry. Not written yet :(**
 
 ## API Document
 
