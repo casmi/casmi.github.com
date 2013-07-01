@@ -6,7 +6,8 @@ We are sorry. Not written yet :(
 
 ## API Document
 
- - [0.3.2 (Latest)](/apidocs/casmi-0.3.2/)
+ - [0.4.0 (Latest)](/apidocs/casmi-0.4.0/)
+ - [0.3.2](/apidocs/casmi-0.3.2/)
  - [0.3.1](/apidocs/casmi-0.3.1/)
  - [0.3.0](/apidocs/casmi-0.3.0/)
 

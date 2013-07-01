@@ -105,19 +105,8 @@
 <li>It read the list of nuclear power plants with geo-location information from the resources (NuclearPlantsMap.java).</li>
 <li>The csv data is read as objects (PowerPlantLoader.java).</li>
 <li>After that, the data is set to the appropriate position according to the geo-location. A nuclear power plant is visualized as a cone. The cone size indicates size of nuclear power plant. (NuclearPlantsMap.java).</li>
-<li>To manipulate the earth, it uses mouse drag (TrackBall.java).</li>
-<li>It also uses selection buffers to enable to picking cone (NuclearPlantsMap.java).</li>
+<li>To manipulate the earth, it uses Trackball class (NuclearPlantsMap.java).</li>
 </ol>
-
-<h3 id="api">API</h3>
-
-<ul>
-<li>For parsing the data, it uses <code>casmi.parser.CSV</code></li>
-<li>For drawing the earth, it uses <code>casmi.element.Rect</code> and <code>casmi.element.Sphere</code>.</li>
-<li>For drawing nuclear power plants, it uses <code>casmi.graphics.element.Cone</code>.</li>
-<li>For putting textures, it uses <code>casmi.graphics.element.Texture</code></li>
-<li>For drawing text, it uses <code>casmi.element.Text</code>, <code>casmi.graphics.element.Text.TextAlign</code> and <code>casmi.font.Font</code></li>
-</ul>
 
       </div>
     </div>

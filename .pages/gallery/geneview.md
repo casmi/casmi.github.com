@@ -19,15 +19,6 @@ https://github.com/casmi/gene-view.git
  1. It automatically get the data from the UCSC Human annotation DAS server and stores to a local machine cache (GeneView.java, GeneLoader.java).
  2. The data which is XML format is read and parsed, and is stored to objects (GeneXMLParser.java, Exon.java, Gene.java).
  3. After that, the data is set to the appropriate position according to the base pairs (GeneView.java).
- 4. To draw the data, it uses the Rect method for each element (GeneElement.java).
- 5. It also uses Mouseover to objects (GeneElement.java). When the mouse is on the objects, it shows the annotation name: refGene name or knownGene name (GeneView.java).
- 6. It also visualize the scale (basepairs) to show which area is shown.
-
-### API
-
- - For download via HTTP, it uses `casmi.net.HTTP`
- - For caching the data, it uses `casmi.util.FileUtil` and `casmi.io.Reader`
- - For parsing downloaded XML data, it uses `casmi.parser.XMLElement`
- - For drawing exons and introns, it uses `casmi.element.Rect`
- - For detecting mouse hits, it uses `casmi.graphics.element.Mouseover`
- - For drawing text, it uses `casmi.element.Text` and `casmi.font.Font`
+ 4. To draw the data, it uses the Rect class for each element (GeneElement.java).
+ 5. It also uses MouseOverCallback to objects (GeneElement.java). When the mouse is on the objects, it shows the annotation name: refGene name or knownGene name (GeneView.java).
+ 6. It also display the scale (basepairs) to show which area is shown.

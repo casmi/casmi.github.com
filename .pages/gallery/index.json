@@ -18,11 +18,6 @@
             "name": "nuclear plants map",
             "slug": "nuclearplantsmap",
             "img": "nuclearplantsmap_thumbnail.jpg"
-        },
-        {
-            "name": "vistweet",
-            "slug": "vistweet",
-            "img": "vistweet_thumbnail.jpg"
         }
     ]
 }

@@ -109,21 +109,10 @@
 <li>It automatically get the data from the UCSC Human annotation DAS server and stores to a local machine cache (GeneView.java, GeneLoader.java).</li>
 <li>The data which is XML format is read and parsed, and is stored to objects (GeneXMLParser.java, Exon.java, Gene.java).</li>
 <li>After that, the data is set to the appropriate position according to the base pairs (GeneView.java).</li>
-<li>To draw the data, it uses the Rect method for each element (GeneElement.java).</li>
-<li>It also uses Mouseover to objects (GeneElement.java). When the mouse is on the objects, it shows the annotation name: refGene name or knownGene name (GeneView.java).</li>
-<li>It also visualize the scale (basepairs) to show which area is shown.</li>
+<li>To draw the data, it uses the Rect class for each element (GeneElement.java).</li>
+<li>It also uses MouseOverCallback to objects (GeneElement.java). When the mouse is on the objects, it shows the annotation name: refGene name or knownGene name (GeneView.java).</li>
+<li>It also display the scale (basepairs) to show which area is shown.</li>
 </ol>
-
-<h3 id="api">API</h3>
-
-<ul>
-<li>For download via HTTP, it uses <code>casmi.net.HTTP</code></li>
-<li>For caching the data, it uses <code>casmi.util.FileUtil</code> and <code>casmi.io.Reader</code></li>
-<li>For parsing downloaded XML data, it uses <code>casmi.parser.XMLElement</code></li>
-<li>For drawing exons and introns, it uses <code>casmi.element.Rect</code></li>
-<li>For detecting mouse hits, it uses <code>casmi.graphics.element.Mouseover</code></li>
-<li>For drawing text, it uses <code>casmi.element.Text</code> and <code>casmi.font.Font</code></li>
-</ul>
 
       </div>
     </div>
