@@ -17,6 +17,6 @@ This quick start project is also available from [https://github.com/casmi/casmi-
 ### Javadoc jar
 
  - [casmi-0.4.0-javadoc.jar (Latest)](/dat/casmi-0.4.0-javadoc.jar)
- - [casmi-0.3.2-javadoc.jar (Latest)](/dat/casmi-0.3.2-javadoc.jar)
+ - [casmi-0.3.2-javadoc.jar](/dat/casmi-0.3.2-javadoc.jar)
  - [casmi-0.3.1-javadoc.jar](/dat/casmi-0.3.1-javadoc.jar)
  - [casmi-0.3.0-javadoc.jar](/dat/casmi-0.3.0-javadoc.jar)

@@ -2,8 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <url>
-        <loc>http://casmi.github.io/index.html</loc>
-        <lastmod>2013-07-01T12:56:10Z</lastmod>
+        <loc>http://casmi.github.io/geneview.html</loc>
+        <lastmod>2013-07-01T13:10:23Z</lastmod>
     </url>
 
     <url>
@@ -12,8 +12,18 @@
     </url>
 
     <url>
+        <loc>http://casmi.github.io/index.html</loc>
+        <lastmod>2013-07-01T12:56:10Z</lastmod>
+    </url>
+
+    <url>
         <loc>http://casmi.github.io/docs.html</loc>
         <lastmod>2013-07-01T14:46:55Z</lastmod>
+    </url>
+
+    <url>
+        <loc>http://casmi.github.io/index.html</loc>
+        <lastmod>2013-07-01T13:06:32Z</lastmod>
     </url>
 
     <url>
@@ -22,8 +32,8 @@
     </url>
 
     <url>
-        <loc>http://casmi.github.io/geneview.html</loc>
-        <lastmod>2013-07-01T13:10:23Z</lastmod>
+        <loc>http://casmi.github.io/tour.html</loc>
+        <lastmod>2013-07-01T14:46:09Z</lastmod>
     </url>
 
     <url>
@@ -33,17 +43,7 @@
 
     <url>
         <loc>http://casmi.github.io/download.html</loc>
-        <lastmod>2013-07-01T13:21:46Z</lastmod>
-    </url>
-
-    <url>
-        <loc>http://casmi.github.io/index.html</loc>
-        <lastmod>2013-07-01T13:06:32Z</lastmod>
-    </url>
-
-    <url>
-        <loc>http://casmi.github.io/tour.html</loc>
-        <lastmod>2013-07-01T14:46:09Z</lastmod>
+        <lastmod>2013-07-02T06:58:53Z</lastmod>
     </url>
 
 </urlset>
